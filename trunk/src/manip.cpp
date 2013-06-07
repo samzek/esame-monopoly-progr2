@@ -463,6 +463,10 @@ void seleziona_personaggio_movimento(turno_t *app,int val,bool scelta_pers_activ
 			break;
 	}
 }
+/** Funzione che in caso cui un giocatore goda delle possibilità di comprare azioni
+* ma vende una delle carte che compongono l'insieme delle carte dello stesso colore
+* ogni azione anche nelle carte precendenti viene persa
+*/
 void svuota_azioni_stesso_colore(carta_t tavola[],int indice)
 {
 	for(int i=0;i<MAX_BOARD;i++)
