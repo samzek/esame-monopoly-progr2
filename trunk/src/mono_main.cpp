@@ -975,8 +975,15 @@ extern "C" void handler_visualizza_regole(GtkMenuItem *menuitem,gpointer data)
 }
 /** Main del programma, carica subito dal file di setup i valori delle carte 
 * nell'array tavola utilizzando ::carica_board funzione fornita dall'interfaccia di fileIO.h
-* inizializza la sensibilità dei pulsanti tramite la funzione inizializza_pulsanti
-* aggiorna la label del credito residuo utilizzando la funzione aggiorna_label_credito
+* inizializza la sensibilità dei pulsanti tramite la funzione ::inizializza_pulsanti
+* aggiorna la label del credito residuo utilizzando la funzione ::aggiorna_label_credito
+* Le funzionalita principali del programma sono gestite dai sengali :
+* ::handler_lancia_dado
+* ::handler_compra_carta
+* ::handler_compra_azioni
+* ::handler_scambia_carte
+* ::handler_visualizza_carte
+* ::handler_dichiara_fallimento
 */
 int main(int argc,char *argv[])
 {
