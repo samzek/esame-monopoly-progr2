@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Social media Monopoly:  File sorgente strutta_dati.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Social media Monopoly
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Generato da Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li><a href="annotated.html"><span>Classi</span></a></li>
+      <li class="current"><a href="files.html"><span>File</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Elenco&#160;dei&#160;file</span></a></li>
+      <li><a href="globals.html"><span>Elementi&#160;dei&#160;file</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">strutta_dati.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="strutta__dati_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00002"></a>00002 <span class="preprocessor">#include &lt;fstream&gt;</span>
+<a name="l00003"></a>00003 
+<a name="l00004"></a>00004 <span class="keyword">using namespace </span>std;
+<a name="l00005"></a>00005 
+<a name="l00006"></a>00006 
+<a name="l00007"></a>00007 <span class="comment">//#define DEBUG_MODE</span>
+<a name="l00008"></a>00008 
+<a name="l00009"></a>00009 <span class="preprocessor">#ifdef DEBUG_MODE</span>
+<a name="l00010"></a>00010 <span class="preprocessor"></span>
+<a name="l00011"></a>00011 <span class="keyword">extern</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MASK ;
+<a name="l00012"></a>00012 
+<a name="l00013"></a>00013 <span class="preprocessor">#define DBG(A, B) {if ((A) &amp; MASK) {B; } }</span>
+<a name="l00014"></a>00014 <span class="preprocessor"></span>
+<a name="l00015"></a>00015 <span class="preprocessor">#else</span>
+<a name="l00016"></a>00016 <span class="preprocessor"></span>
+<a name="l00017"></a>00017 <span class="comment">/* Definendo questa macro si disattivano le assert se la macro</span>
+<a name="l00018"></a>00018 <span class="comment">    DEBUG_MODE non è definita */</span>
+<a name="l00019"></a><a class="code" href="strutta__dati_8h.html#a8de3ed741dadc9c979a4ff17c0a9116e">00019</a> <span class="preprocessor">#define NDEBUG</span>
+<a name="l00020"></a><a class="code" href="strutta__dati_8h.html#a9fd176efd6d22cb809550f0271c2a93d">00020</a> <span class="preprocessor"></span><span class="preprocessor">#define DBG(A, B)</span>
+<a name="l00021"></a>00021 <span class="preprocessor"></span>
+<a name="l00022"></a>00022 <span class="preprocessor">#endif</span>
+<a name="l00023"></a>00023 <span class="preprocessor"></span>
+<a name="l00024"></a><a class="code" href="strutta__dati_8h.html#a63551094f000f640a91832ab092d72e6">00024</a> <span class="preprocessor">#define D0(a)</span>
+<a name="l00025"></a><a class="code" href="strutta__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">00025</a> <span class="preprocessor"></span><span class="preprocessor">#define D1(a) DBG(1, a)</span>
+<a name="l00026"></a><a class="code" href="strutta__dati_8h.html#a975397c373ae2a9dc28d0297fa18da56">00026</a> <span class="preprocessor"></span><span class="preprocessor">#define D2(a) DBG(2, a)</span>
+<a name="l00027"></a>00027 <span class="preprocessor"></span>
+<a name="l00028"></a>00028 <span class="preprocessor">#include &lt;cassert&gt;</span>
+<a name="l00029"></a>00029 
+<a name="l00031"></a><a class="code" href="strutta__dati_8h.html#a669918f54dab8982e88cc3c15a03d9d3">00031</a> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="strutta__dati_8h.html#a669918f54dab8982e88cc3c15a03d9d3" title="dimensione massima delle stringhe">DIM_STRINGHE</a>=20;
+<a name="l00033"></a><a class="code" href="strutta__dati_8h.html#abea96c5c88c5ab5a40e63a4f800ad89c">00033</a> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="strutta__dati_8h.html#abea96c5c88c5ab5a40e63a4f800ad89c" title="denaro di partenza del gioco">DENARO</a>=10000;
+<a name="l00035"></a><a class="code" href="strutta__dati_8h.html#ad43f8c91bcd12ba9c244c810b7933c0a">00035</a> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="strutta__dati_8h.html#ad43f8c91bcd12ba9c244c810b7933c0a" title="massimo numero di carte presenti nel gioco">MAX_BOARD</a>=40;
+<a name="l00037"></a><a class="code" href="strutta__dati_8h.html#a989e38486ed69cc55a3b417054ae5b3c">00037</a> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="strutta__dati_8h.html#a989e38486ed69cc55a3b417054ae5b3c" title="massima dimensione di una stringa per i messaggi all&#39;utente">DIM_MESSAGGIO</a>=100;
+<a name="l00041"></a><a class="code" href="strutta__dati_8h.html#a64b4127eab65af02324d9deb906ac125">00041</a> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="strutta__dati_8h.html#a64b4127eab65af02324d9deb906ac125" title="grandezza un pixel di una carta sulla mappa utile per gestire i movimenti delle pedine">PIXEL_CARTA</a>=41;
+<a name="l00043"></a><a class="code" href="strutta__dati_8h.html#a18f3b76839e1b24b872ec84ef9b783ed">00043</a> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="strutta__dati_8h.html#a18f3b76839e1b24b872ec84ef9b783ed" title="limite sinistro per la pedina in pixel">LIMITE_SX_PX</a>=15;
+<a name="l00045"></a><a class="code" href="strutta__dati_8h.html#a4a84892ac2d2b7b12394b6ce11f098c2">00045</a> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="strutta__dati_8h.html#a4a84892ac2d2b7b12394b6ce11f098c2" title="limite superiore per la pedina in pixel">LIMITE_UP_PX</a>=25;
+<a name="l00047"></a><a class="code" href="strutta__dati_8h.html#a2e77c529a369c47c0eb367f797919cc0">00047</a> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="strutta__dati_8h.html#a2e77c529a369c47c0eb367f797919cc0" title="limite destro per la pedina in pixel">LIMITE_DX_PX</a>=425;
+<a name="l00049"></a><a class="code" href="strutta__dati_8h.html#a109d000c036a060c6dcc60762ef27eef">00049</a> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="strutta__dati_8h.html#a109d000c036a060c6dcc60762ef27eef" title="limite inferiore per la pedina in pixel">LIMITE_DO_PX</a>=450;
+<a name="l00053"></a><a class="code" href="strutta__dati_8h.html#a09233e19648809f424f7a4078fbbb05a">00053</a> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="strutta__dati_8h.html#a09233e19648809f424f7a4078fbbb05a" title="descrive la lunghezza massima della stringa contenente il nome del file dalla foto di ogni carta...">DIM_STR_FILE</a>=20;
+<a name="l00054"></a>00054 
+<a name="l00055"></a>00055 
+<a name="l00057"></a><a class="code" href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6edaf1ce01387d2348f8b858721a7db81670">00057</a> <span class="keyword">enum</span> <a class="code" href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6ed" title="enumerato che rappresenta i possibili personaggi utilizzabili nel gioco">personaggio_t</a> {<a class="code" href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6edaf1ce01387d2348f8b858721a7db81670">S</a>,<a class="code" href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6edaef31cc6fe9479955961311ee18ac205f">L</a>,<a class="code" href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6eda3f2a77ecd272aa6d6b5902faa5e5fc68">B</a>,<a class="code" href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6eda51ca6c63d97347ee58cc7da59ab6994b">M</a>};
+<a name="l00065"></a><a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a6f5573fd06b8a8917889f3820575a09d">00065</a> <span class="keyword">enum</span> <a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8" title="enumerato che rappresenta il colore di ogni carta nello specifico i valari finali stanno: SC: senza c...">colore_t</a>{<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a28f41f1144eee94834387e9a6a088bc1">V</a>,<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a0aa3e60ba1c575f32d00afb3918a63ee">AZ</a>,<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a42e9aa764b9ee7ecf7e668462de6f96d">RO</a>,<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8aaa54e8220a1a7dbfd4cf3843b1b04422">AR</a>,<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8ae76f903aeec6992ab7a1a681402724b1">ROS</a>,<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a2fe993340f6abb2234e543cd427df70b">G</a>,<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a6f5573fd06b8a8917889f3820575a09d">VE</a>,<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8af603e0d046225e81459ffe6d8ee5ba6b">BL</a>,<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a9b691ca253b009f6c549a080f2442754">SC</a>,<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a3dbd1016ea99d087d747530418b89a01">NC</a>};
+<a name="l00069"></a><a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1aba595d8bca8bc5e67c37c0a9d89becfa">00069</a> <span class="keyword">enum</span> <a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1" title="enumerato che stabilisce il movimento direzionale che una certa pedina deve seguire nel suo tragitto...">movimento_t</a>{<a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1a898fd7abd6aae10a03fc8f61543e1ab6">SX</a>,<a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1aba595d8bca8bc5e67c37c0a9d89becfa">UP</a>,<a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1a22dc95a35fbd833d9908928812979156">DX</a>,<a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1abfea6036e64d9c7c773d277a57d2f959">DO</a>};
+<a name="l00070"></a>00070 
+<a name="l00071"></a>00071 
+<a name="l00077"></a><a class="code" href="structgiocatore__t.html">00077</a> <span class="keyword">struct </span><a class="code" href="structgiocatore__t.html" title="struttura dati che rappresenta il singolo giocatore con tutte le caratteristiche ad esso connesse qua...">giocatore_t</a>
+<a name="l00078"></a>00078 {
+<a name="l00079"></a><a class="code" href="structgiocatore__t.html#ab5545bf977dd406e5e1c0686b602141c">00079</a>         <span class="keywordtype">char</span> nome[<a class="code" href="strutta__dati_8h.html#a669918f54dab8982e88cc3c15a03d9d3" title="dimensione massima delle stringhe">DIM_STRINGHE</a>];
+<a name="l00080"></a><a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">00080</a>         <span class="keywordtype">int</span> <a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>;
+<a name="l00081"></a><a class="code" href="structgiocatore__t.html#a5bb2d982a9ea44e28636477c57feac0e">00081</a>         <span class="keywordtype">int</span> <a class="code" href="structgiocatore__t.html#a5bb2d982a9ea44e28636477c57feac0e">conta_propr</a>;
+<a name="l00082"></a><a class="code" href="structgiocatore__t.html#a4d6e0cf716e9d00ef91937209d8e03c8">00082</a>         <span class="keywordtype">bool</span> <a class="code" href="structgiocatore__t.html#a4d6e0cf716e9d00ef91937209d8e03c8">prigione</a>;
+<a name="l00083"></a><a class="code" href="structgiocatore__t.html#a1a28dc9f950ff418dc3d69434e0a5312">00083</a>         <a class="code" href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6ed" title="enumerato che rappresenta i possibili personaggi utilizzabili nel gioco">personaggio_t</a> <a class="code" href="structgiocatore__t.html#a1a28dc9f950ff418dc3d69434e0a5312">pers</a>;
+<a name="l00084"></a>00084 };
+<a name="l00085"></a>00085 
+<a name="l00091"></a><a class="code" href="structcarta__t.html">00091</a> <span class="keyword">struct </span><a class="code" href="structcarta__t.html" title="struttura dati che mi rappresenta una carta con tutte la carattestiche ad essa connesse.">carta_t</a>
+<a name="l00092"></a>00092 {
+<a name="l00093"></a><a class="code" href="structcarta__t.html#a07384c80fb3eddd513af82d19656e50a">00093</a>         <span class="keywordtype">char</span> nome_carta[<a class="code" href="strutta__dati_8h.html#a669918f54dab8982e88cc3c15a03d9d3" title="dimensione massima delle stringhe">DIM_STRINGHE</a>];
+<a name="l00094"></a><a class="code" href="structcarta__t.html#a62b7fe7b8c645137f9488800ab45c1a1">00094</a>         <span class="keywordtype">int</span> <a class="code" href="structcarta__t.html#a62b7fe7b8c645137f9488800ab45c1a1">prezzo</a>;
+<a name="l00095"></a><a class="code" href="structcarta__t.html#aabc77ee3a44b6abd8821e050110967fc">00095</a>         <span class="keywordtype">int</span> <a class="code" href="structcarta__t.html#aabc77ee3a44b6abd8821e050110967fc">num_azioni</a>;
+<a name="l00096"></a><a class="code" href="structcarta__t.html#a4962906c2592c2f4844270aed03e7d9b">00096</a>         <span class="keywordtype">int</span> <a class="code" href="structcarta__t.html#a4962906c2592c2f4844270aed03e7d9b">val_azioni</a>;
+<a name="l00097"></a><a class="code" href="structcarta__t.html#aee3e414144a734939b9fd8f7f3ac5bc4">00097</a>         <span class="keywordtype">int</span> <a class="code" href="structcarta__t.html#aee3e414144a734939b9fd8f7f3ac5bc4">affitto</a>;
+<a name="l00098"></a><a class="code" href="structcarta__t.html#adee500680ef369bb67e84279b0979aed">00098</a>         <span class="keywordtype">int</span> <a class="code" href="structcarta__t.html#adee500680ef369bb67e84279b0979aed">valore_ipoteca</a>;
+<a name="l00099"></a><a class="code" href="structcarta__t.html#a073b728f8100ac03ea66d54c45f98792">00099</a>         <span class="keywordtype">char</span> nome_f[<a class="code" href="strutta__dati_8h.html#a09233e19648809f424f7a4078fbbb05a" title="descrive la lunghezza massima della stringa contenente il nome del file dalla foto di ogni carta...">DIM_STR_FILE</a>];
+<a name="l00100"></a><a class="code" href="structcarta__t.html#a4900c3bc5f551c9d4983509d620be2e9">00100</a>         <a class="code" href="structgiocatore__t.html" title="struttura dati che rappresenta il singolo giocatore con tutte le caratteristiche ad esso connesse qua...">giocatore_t</a> *<a class="code" href="structcarta__t.html#a4900c3bc5f551c9d4983509d620be2e9">prop</a>;
+<a name="l00101"></a><a class="code" href="structcarta__t.html#a74a9b5d269efd9d8e3a5bd39f4fc381f">00101</a>         <a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8" title="enumerato che rappresenta il colore di ogni carta nello specifico i valari finali stanno: SC: senza c...">colore_t</a> <a class="code" href="structcarta__t.html#a74a9b5d269efd9d8e3a5bd39f4fc381f">colore</a>;
+<a name="l00102"></a>00102 };
+<a name="l00103"></a>00103 
+<a name="l00111"></a><a class="code" href="structturno__t.html">00111</a> <span class="keyword">struct </span><a class="code" href="structturno__t.html" title="Struttura dati che rappresenta un turno all&#39;interno del quale si trovano il nome del giocatore di che...">turno_t</a>
+<a name="l00112"></a>00112 {
+<a name="l00113"></a><a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">00113</a>         <a class="code" href="structgiocatore__t.html" title="struttura dati che rappresenta il singolo giocatore con tutte le caratteristiche ad esso connesse qua...">giocatore_t</a> <a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>;
+<a name="l00119"></a><a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4">00119</a>         <span class="keywordtype">int</span> <a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4" title="variabile che mi stabilisce su quale carta un certo giocatore si trova è l&#39;elemento di unione tra la ...">posizione_nelle_carte</a>;
+<a name="l00120"></a><a class="code" href="structturno__t.html#a326ce226c3caea11b5c503f13ad566f9">00120</a>         <a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1" title="enumerato che stabilisce il movimento direzionale che una certa pedina deve seguire nel suo tragitto...">movimento_t</a> <a class="code" href="structturno__t.html#a326ce226c3caea11b5c503f13ad566f9">move</a>;
+<a name="l00121"></a><a class="code" href="structturno__t.html#a95196c96b48b65663cac7c21e0fe91ca">00121</a>         <span class="keywordtype">int</span> <a class="code" href="structturno__t.html#a95196c96b48b65663cac7c21e0fe91ca">coord_x</a>;
+<a name="l00122"></a><a class="code" href="structturno__t.html#a947c18dac8b4f4e8c9c982fe13ef9209">00122</a>         <span class="keywordtype">int</span> <a class="code" href="structturno__t.html#a947c18dac8b4f4e8c9c982fe13ef9209">coord_y</a>;
+<a name="l00123"></a><a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">00123</a>         <a class="code" href="structturno__t.html" title="Struttura dati che rappresenta un turno all&#39;interno del quale si trovano il nome del giocatore di che...">turno_t</a> *<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a>;
+<a name="l00124"></a>00124 };
+<a name="l00125"></a>00125 
+<a name="l00126"></a><a class="code" href="strutta__dati_8h.html#a13a018e45fed07d44eea183f0b945d4f">00126</a> <span class="keyword">typedef</span> <a class="code" href="structturno__t.html" title="Struttura dati che rappresenta un turno all&#39;interno del quale si trovano il nome del giocatore di che...">turno_t</a> *<a class="code" href="strutta__dati_8h.html#a13a018e45fed07d44eea183f0b945d4f">turni</a>;
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tutto</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classi</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>File</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funzioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variabili</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Ridefinizioni di tipo (typedef)</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Tipi enumerati (enum)</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valori del tipo enumerato</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Definizioni</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generato Ven 7 Giu 2013 13:30:38 per Social media Monopoly da &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

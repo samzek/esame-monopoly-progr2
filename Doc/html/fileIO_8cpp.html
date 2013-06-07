@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Social media Monopoly: Riferimenti per il file fileIO.cpp</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Social media Monopoly
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Generato da Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li><a href="annotated.html"><span>Classi</span></a></li>
+      <li class="current"><a href="files.html"><span>File</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Elenco&#160;dei&#160;file</span></a></li>
+      <li><a href="globals.html"><span>Elementi&#160;dei&#160;file</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funzioni</a>  </div>
+  <div class="headertitle">
+<div class="title">Riferimenti per il file fileIO.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="strutta__dati_8h_source.html">strutta_dati.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="fileIO_8h_source.html">fileIO.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="manip_8h_source.html">manip.h</a>&quot;</code><br/>
+<code>#include &lt;cstring&gt;</code><br/>
+</div><table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Funzioni</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileIO_8cpp.html#a551dc65f05529fe5f12600a78cb7a497">carica_board</a> (<a class="el" href="structcarta__t.html">carta_t</a> <a class="el" href="mono__main_8cpp.html#acfee36e499475b8e57d156c364e4c84a">tavola</a>[])</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">carico l'array con il quale è implementata la struttura dati <a class="el" href="structcarta__t.html" title="struttura dati che mi rappresenta una carta con tutte la carattestiche ad essa connesse.">carta_t</a> con valori che si trovano in file di setup il quale contiene tutti i parametri che ogni carta deve possedere prima di iniziare il gioco  <a href="#a551dc65f05529fe5f12600a78cb7a497"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileIO_8cpp.html#a61b561b9f290209743c9fd477feca873">salva_partita</a> (<a class="el" href="strutta__dati_8h.html#a13a018e45fed07d44eea183f0b945d4f">turni</a> testa, <a class="el" href="structcarta__t.html">carta_t</a> <a class="el" href="mono__main_8cpp.html#acfee36e499475b8e57d156c364e4c84a">tavola</a>[], int num_gc, <a class="el" href="structturno__t.html">turno_t</a> *<a class="el" href="mono__main_8cpp.html#ab1d7738acc116343f76e7010f1721a8e">punta_turni</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">salva la partita corrente sul file salva_partita.txt  <a href="#a61b561b9f290209743c9fd477feca873"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fileIO_8cpp.html#a2dc2dd9d739642232c38557a1fe9803d">carica_partita</a> (<a class="el" href="strutta__dati_8h.html#a13a018e45fed07d44eea183f0b945d4f">turni</a> &amp;testa, <a class="el" href="structcarta__t.html">carta_t</a> <a class="el" href="mono__main_8cpp.html#acfee36e499475b8e57d156c364e4c84a">tavola</a>[], int &amp;num_gc, <a class="el" href="structturno__t.html">turno_t</a> *&amp;<a class="el" href="mono__main_8cpp.html#ab1d7738acc116343f76e7010f1721a8e">punta_turni</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">carica l'ultima partita salvata  <a href="#a2dc2dd9d739642232c38557a1fe9803d"></a><br/></td></tr>
+</table>
+<hr/><h2>Documentazione delle funzioni</h2>
+<a class="anchor" id="a551dc65f05529fe5f12600a78cb7a497"></a><!-- doxytag: member="fileIO.cpp::carica_board" ref="a551dc65f05529fe5f12600a78cb7a497" args="(carta_t tavola[])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="fileIO_8h.html#a551dc65f05529fe5f12600a78cb7a497">carica_board</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcarta__t.html">carta_t</a>&#160;</td>
+          <td class="paramname"><em>tavola</em>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>carico l'array con il quale è implementata la struttura dati <a class="el" href="structcarta__t.html" title="struttura dati che mi rappresenta una carta con tutte la carattestiche ad essa connesse.">carta_t</a> con valori che si trovano in file di setup il quale contiene tutti i parametri che ogni carta deve possedere prima di iniziare il gioco </p>
+<div class="fragment"><pre class="fragment">{
+        <a class="code" href="strutta__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;<span class="stringliteral">&quot;INIZIO DEBUG CARICAMENTO TAVOLA&quot;</span>&lt;&lt;endl);
+        
+        ifstream f(<span class="stringliteral">&quot;setup_board_carte.txt&quot;</span>);
+        <span class="keywordflow">if</span>(!f)
+        {
+                <span class="keywordflow">return</span> <span class="keyword">false</span>;
+        }
+        <span class="keywordflow">else</span>
+        {       
+                <span class="keywordtype">char</span> colore[4];
+                <span class="keywordtype">int</span> i=0;
+                <span class="keywordflow">while</span>(f&gt;&gt;tavola[i].nome_carta)
+                {
+                        f&gt;&gt;tavola[i].<a class="code" href="structcarta__t.html#a62b7fe7b8c645137f9488800ab45c1a1">prezzo</a>&gt;&gt;tavola[i].<a class="code" href="structcarta__t.html#a4962906c2592c2f4844270aed03e7d9b">val_azioni</a>&gt;&gt;tavola[i].<a class="code" href="structcarta__t.html#aee3e414144a734939b9fd8f7f3ac5bc4">affitto</a>;
+                        f&gt;&gt;colore&gt;&gt;tavola[i].<a class="code" href="structcarta__t.html#a073b728f8100ac03ea66d54c45f98792">nome_f</a>;
+                        <a class="code" href="manip_8cpp.html#a56b03a06475749aac03c307595ecd080" title="Funziona usata nella funziona carica_board e permette di decide quale colore attribuire a una determi...">imposta_colore</a>(tavola,colore,i);
+                        tavola[i].<a class="code" href="structcarta__t.html#aabc77ee3a44b6abd8821e050110967fc">num_azioni</a>=0;
+                        tavola[i].<a class="code" href="structcarta__t.html#adee500680ef369bb67e84279b0979aed">valore_ipoteca</a>=tavola[i].<a class="code" href="structcarta__t.html#a62b7fe7b8c645137f9488800ab45c1a1">prezzo</a>/2;
+                        <a class="code" href="strutta__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;<span class="stringliteral">&quot;elementi:&quot;</span>&lt;&lt;endl);
+                        <a class="code" href="strutta__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;tavola[i].nome_carta&lt;&lt;endl);
+                        <a class="code" href="strutta__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;tavola[i].prezzo&lt;&lt;endl);
+                        <a class="code" href="strutta__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;tavola[i].val_azioni&lt;&lt;endl);
+                        <a class="code" href="strutta__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;tavola[i].affitto&lt;&lt;endl);
+                        <a class="code" href="strutta__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;tavola[i].colore&lt;&lt;endl);
+                        i++;
+                }
+        }
+        
+        <a class="code" href="strutta__dati_8h.html#a975397c373ae2a9dc28d0297fa18da56">D2</a>(cout&lt;&lt;<span class="stringliteral">&quot;Carica board terminata con successo&quot;</span>&lt;&lt;endl);
+        
+        <span class="keywordflow">return</span> <span class="keyword">true</span>;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a2dc2dd9d739642232c38557a1fe9803d"></a><!-- doxytag: member="fileIO.cpp::carica_partita" ref="a2dc2dd9d739642232c38557a1fe9803d" args="(turni &amp;testa, carta_t tavola[], int &amp;num_gc, turno_t *&amp;punta_turni)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="fileIO_8h.html#a2dc2dd9d739642232c38557a1fe9803d">carica_partita</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="strutta__dati_8h.html#a13a018e45fed07d44eea183f0b945d4f">turni</a> &amp;&#160;</td>
+          <td class="paramname"><em>testa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcarta__t.html">carta_t</a>&#160;</td>
+          <td class="paramname"><em>tavola</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>num_gc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structturno__t.html">turno_t</a> *&amp;&#160;</td>
+          <td class="paramname"><em>punta_turni</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>carica l'ultima partita salvata </p>
+<div class="fragment"><pre class="fragment">{
+        <a class="code" href="strutta__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;<span class="stringliteral">&quot;INIZIO DEBUG CARICAMENTO: &quot;</span>&lt;&lt;endl);
+
+        ifstream f(<span class="stringliteral">&quot;salva_partita.txt&quot;</span>);
+        <span class="keywordflow">if</span>(!f)
+                <span class="keywordflow">return</span> <span class="keyword">false</span>;
+        <span class="keywordflow">else</span>
+                {
+                        <span class="keywordtype">char</span> nome[<a class="code" href="strutta__dati_8h.html#a669918f54dab8982e88cc3c15a03d9d3" title="dimensione massima delle stringhe">DIM_STRINGHE</a>];
+                        <a class="code" href="manip_8cpp.html#a60f1383c5a206a8150fdc5ec70b9e9cf" title="Elimina ogni elemento presente nella lista dei turni.">elimina_lista</a>(testa);
+                        f&gt;&gt;num_gc;
+                        <a class="code" href="manip_8cpp.html#aa40e7189ef238d9befc3eb03d8e5eb06" title="Si occupa di creare la lista circolare dei turni.">crea_turni</a>(testa,num_gc);
+                        <a class="code" href="manip_8cpp.html#a39490d45dbd0caa54d671203f07e1a78" title="Funzione &quot;di Debugging&quot; che permette di stampare l&#39;intera lista dei turni.">stampa_turni</a>(testa);
+                        f&gt;&gt;nome;
+                        <a class="code" href="structturno__t.html" title="Struttura dati che rappresenta un turno all&#39;interno del quale si trovano il nome del giocatore di che...">turno_t</a> *app=testa;
+                        <a class="code" href="structturno__t.html" title="Struttura dati che rappresenta un turno all&#39;interno del quale si trovano il nome del giocatore di che...">turno_t</a> *ultimo=<a class="code" href="manip_8cpp.html#aa68fd72a8ba982beecef16de1319006e" title="Questa funzione ritorna il puntatore all&#39;ultimo elemento della lista dei turni.">ultimo_turno</a>(testa);
+                        ultimo-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a>=NULL;
+                        
+                        <span class="keywordflow">while</span>(app!=NULL)
+                        {
+                                f&gt;&gt;app-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#ab5545bf977dd406e5e1c0686b602141c">nome</a>;
+                                <a class="code" href="strutta__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;<span class="stringliteral">&quot;nome GC: &quot;</span>&lt;&lt;app-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#ab5545bf977dd406e5e1c0686b602141c">nome</a>&lt;&lt;endl);
+                                f&gt;&gt;app-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>;
+                                <a class="code" href="strutta__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;<span class="stringliteral">&quot;valore_residuto&quot;</span>&lt;&lt;app-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>&lt;&lt;endl);
+                                f&gt;&gt;app-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a5bb2d982a9ea44e28636477c57feac0e">conta_propr</a>;
+                                <a class="code" href="strutta__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;<span class="stringliteral">&quot;Numero proprietà: &quot;</span>&lt;&lt;app-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a5bb2d982a9ea44e28636477c57feac0e">conta_propr</a>&lt;&lt;endl)
+                                int pers;
+                                f&gt;&gt;pers;
+                                <a class="code" href="manip_8cpp.html#a7ec3287e3a97b930fa5bf24552afa324" title="funzione utilizzata da::carica_partita per andare a scegliere a quale personaggio o movimento corrisp...">seleziona_personaggio_movimento</a>(app,pers,true);
+                                f&gt;&gt;app-&gt;giocatore.prigione;
+                                f&gt;&gt;app-&gt;posizione_nelle_carte;
+                                <a class="code" href="strutta__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;&quot;Posizione nelle carte: &quot;&lt;&lt;app-&gt;posizione_nelle_carte&lt;&lt;endl);
+                                f&gt;&gt;app-&gt;coord_x;
+                                f&gt;&gt;app-&gt;coord_y;
+                                <span class="keywordtype">int</span> move;
+                                f&gt;&gt;move;
+                                <a class="code" href="manip_8cpp.html#a7ec3287e3a97b930fa5bf24552afa324" title="funzione utilizzata da::carica_partita per andare a scegliere a quale personaggio o movimento corrisp...">seleziona_personaggio_movimento</a>(app,move,false);
+                                <span class="keywordtype">int</span> i;
+                                <a class="code" href="strutta__dati_8h.html#a975397c373ae2a9dc28d0297fa18da56">D2</a>(cout&lt;&lt;&quot;Fino a qui OK caricamento dati giocatore completato&quot;&lt;&lt;endl);
+                                while(true)
+                                {
+                                        f&gt;&gt;i;
+                                        <span class="keywordflow">if</span>(i==-1)
+                                                <span class="keywordflow">break</span>;
+                                        <span class="keywordflow">if</span>(i&gt;=40)
+                                                <span class="keywordflow">return</span> <span class="keyword">false</span>;
+                                        cout&lt;&lt;i&lt;&lt;endl;
+                                        tavola[i].<a class="code" href="structcarta__t.html#a4900c3bc5f551c9d4983509d620be2e9">prop</a>=&amp;(app-&gt;giocatore);
+                                        <a class="code" href="strutta__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;<span class="stringliteral">&quot;Proprietario:&quot;</span>&lt;&lt;tavola[i].prop-&gt;nome&lt;&lt;endl);
+                                        f&gt;&gt;tavola[i].<a class="code" href="structcarta__t.html#aabc77ee3a44b6abd8821e050110967fc">num_azioni</a>;
+                                        <a class="code" href="strutta__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;<span class="stringliteral">&quot;Numero di azioni: &quot;</span>&lt;&lt;tavola[i].num_azioni&lt;&lt;endl);
+                                }
+                                <a class="code" href="strutta__dati_8h.html#a975397c373ae2a9dc28d0297fa18da56">D2</a>(cout&lt;&lt;<span class="stringliteral">&quot;Ok caricamento proprietà&quot;</span>&lt;&lt;endl);
+                                app=app-&gt;pross;
+                        }
+                        app=testa;
+                        <span class="keywordflow">while</span>(app!=NULL)
+                        {
+                                <span class="keywordflow">if</span>(strcmp(nome,app-&gt;giocatore.nome)==0);
+                                {
+                                        punta_turni=app;
+                                        <a class="code" href="strutta__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;<span class="stringliteral">&quot;carico turno: &quot;</span>&lt;&lt;punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#ab5545bf977dd406e5e1c0686b602141c">nome</a>&lt;&lt;endl);
+                                        <span class="keywordflow">break</span>;
+                                }
+                                app=app-&gt;pross;
+                        }
+                        ultimo-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a>=testa;
+                        <a class="code" href="strutta__dati_8h.html#a975397c373ae2a9dc28d0297fa18da56">D2</a>(cout&lt;&lt;<span class="stringliteral">&quot;sistemo ultimo turno riportandolo circolare la lista ok!&quot;</span>&lt;&lt;endl);
+                }
+                
+                <span class="keywordflow">return</span> <span class="keyword">true</span>;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a61b561b9f290209743c9fd477feca873"></a><!-- doxytag: member="fileIO.cpp::salva_partita" ref="a61b561b9f290209743c9fd477feca873" args="(turni testa, carta_t tavola[], int num_gc, turno_t *punta_turni)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="fileIO_8h.html#a61b561b9f290209743c9fd477feca873">salva_partita</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="strutta__dati_8h.html#a13a018e45fed07d44eea183f0b945d4f">turni</a>&#160;</td>
+          <td class="paramname"><em>testa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcarta__t.html">carta_t</a>&#160;</td>
+          <td class="paramname"><em>tavola</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_gc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structturno__t.html">turno_t</a> *&#160;</td>
+          <td class="paramname"><em>punta_turni</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>salva la partita corrente sul file salva_partita.txt </p>
+<div class="fragment"><pre class="fragment">{
+        assert(num_gc!=0 &amp;&amp; testa!=NULL);
+        
+        <a class="code" href="structturno__t.html" title="Struttura dati che rappresenta un turno all&#39;interno del quale si trovano il nome del giocatore di che...">turno_t</a> *app=testa;
+        <a class="code" href="structturno__t.html" title="Struttura dati che rappresenta un turno all&#39;interno del quale si trovano il nome del giocatore di che...">turno_t</a> *ultimo=<a class="code" href="manip_8cpp.html#aa68fd72a8ba982beecef16de1319006e" title="Questa funzione ritorna il puntatore all&#39;ultimo elemento della lista dei turni.">ultimo_turno</a>(testa);
+        ultimo-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a>=NULL;
+        
+        ofstream f(<span class="stringliteral">&quot;salva_partita.txt&quot;</span>);
+        <span class="keywordflow">if</span>(!f)
+                <span class="keywordflow">return</span> <span class="keyword">false</span>;
+        <span class="keywordflow">else</span>
+                {
+                        f&lt;&lt;num_gc&lt;&lt;endl;
+                        f&lt;&lt;punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#ab5545bf977dd406e5e1c0686b602141c">nome</a>&lt;&lt;endl;
+                        
+                        <span class="keywordflow">while</span>(app!=NULL)
+                        {
+                                f&lt;&lt;app-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#ab5545bf977dd406e5e1c0686b602141c">nome</a>&lt;&lt;endl;
+                                f&lt;&lt;app-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>&lt;&lt;endl;
+                                f&lt;&lt;app-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a5bb2d982a9ea44e28636477c57feac0e">conta_propr</a>&lt;&lt;endl;
+                                f&lt;&lt;app-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a1a28dc9f950ff418dc3d69434e0a5312">pers</a>&lt;&lt;endl;
+                                f&lt;&lt;app-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a4d6e0cf716e9d00ef91937209d8e03c8">prigione</a>&lt;&lt;endl;
+                                f&lt;&lt;app-&gt;<a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4" title="variabile che mi stabilisce su quale carta un certo giocatore si trova è l&#39;elemento di unione tra la ...">posizione_nelle_carte</a>&lt;&lt;endl;
+                                f&lt;&lt;app-&gt;<a class="code" href="structturno__t.html#a95196c96b48b65663cac7c21e0fe91ca">coord_x</a>&lt;&lt;endl;
+                                f&lt;&lt;app-&gt;<a class="code" href="structturno__t.html#a947c18dac8b4f4e8c9c982fe13ef9209">coord_y</a>&lt;&lt;endl;
+                                f&lt;&lt;app-&gt;<a class="code" href="structturno__t.html#a326ce226c3caea11b5c503f13ad566f9">move</a>&lt;&lt;endl;
+                                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;<a class="code" href="strutta__dati_8h.html#ad43f8c91bcd12ba9c244c810b7933c0a" title="massimo numero di carte presenti nel gioco">MAX_BOARD</a>;i++)
+                                        <span class="keywordflow">if</span>(tavola[i].prop==&amp;(app-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>))
+                                        {
+                                                f&lt;&lt;i&lt;&lt;endl;
+                                                f&lt;&lt;tavola[i].<a class="code" href="structcarta__t.html#aabc77ee3a44b6abd8821e050110967fc">num_azioni</a>&lt;&lt;endl;
+                                        }
+                                f&lt;&lt;-1&lt;&lt;endl;
+                        app=app-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a>;
+                        }       
+                }
+                ultimo-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a>=testa;
+                <span class="keywordflow">return</span> <span class="keyword">true</span>;
+}
+</pre></div>
+</div>
+</div>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tutto</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classi</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>File</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funzioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variabili</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Ridefinizioni di tipo (typedef)</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Tipi enumerati (enum)</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valori del tipo enumerato</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Definizioni</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generato Ven 7 Giu 2013 13:30:38 per Social media Monopoly da &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

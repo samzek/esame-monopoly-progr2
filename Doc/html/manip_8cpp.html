@@ -1,0 +1,1209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Social media Monopoly: Riferimenti per il file manip.cpp</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Social media Monopoly
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Generato da Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li><a href="annotated.html"><span>Classi</span></a></li>
+      <li class="current"><a href="files.html"><span>File</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Elenco&#160;dei&#160;file</span></a></li>
+      <li><a href="globals.html"><span>Elementi&#160;dei&#160;file</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funzioni</a>  </div>
+  <div class="headertitle">
+<div class="title">Riferimenti per il file manip.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="strutta__dati_8h_source.html">strutta_dati.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="manip_8h_source.html">manip.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="fileIO_8h_source.html">fileIO.h</a>&quot;</code><br/>
+<code>#include &lt;cstring&gt;</code><br/>
+<code>#include &lt;sstream&gt;</code><br/>
+<code>#include &lt;cstdlib&gt;</code><br/>
+<code>#include &lt;ctime&gt;</code><br/>
+</div><table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Funzioni</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manip_8cpp.html#af063e16f2f200e50113fcc4cc8821de4">stampa</a> (<a class="el" href="structcarta__t.html">carta_t</a> <a class="el" href="mono__main_8cpp.html#acfee36e499475b8e57d156c364e4c84a">tavola</a>[], int i)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Funzione "di debugging" che permette di stampa l'intero array delle carte.  <a href="#af063e16f2f200e50113fcc4cc8821de4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manip_8cpp.html#a56b03a06475749aac03c307595ecd080">imposta_colore</a> (<a class="el" href="structcarta__t.html">carta_t</a> <a class="el" href="mono__main_8cpp.html#acfee36e499475b8e57d156c364e4c84a">tavola</a>[], char colore[], int i)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Funziona usata nella funziona <a class="el" href="fileIO_8h.html#a551dc65f05529fe5f12600a78cb7a497" title="carico l&#39;array con il quale è implementata la struttura dati carta_t con valori che si trovano in fil...">carica_board</a> e permette di decide quale colore attribuire a una determinata carta.  <a href="#a56b03a06475749aac03c307595ecd080"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structturno__t.html">turno_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manip_8cpp.html#aa68fd72a8ba982beecef16de1319006e">ultimo_turno</a> (<a class="el" href="strutta__dati_8h.html#a13a018e45fed07d44eea183f0b945d4f">turni</a> testa)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Questa funzione ritorna il puntatore all'ultimo elemento della lista dei turni.  <a href="#aa68fd72a8ba982beecef16de1319006e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manip_8cpp.html#aa40e7189ef238d9befc3eb03d8e5eb06">crea_turni</a> (<a class="el" href="strutta__dati_8h.html#a13a018e45fed07d44eea183f0b945d4f">turni</a> &amp;testa, int num_giocatori)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Si occupa di creare la lista circolare dei turni.  <a href="#aa40e7189ef238d9befc3eb03d8e5eb06"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manip_8cpp.html#a39490d45dbd0caa54d671203f07e1a78">stampa_turni</a> (<a class="el" href="strutta__dati_8h.html#a13a018e45fed07d44eea183f0b945d4f">turni</a> testa)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Funzione "di Debugging" che permette di stampare l'intera lista dei turni.  <a href="#a39490d45dbd0caa54d671203f07e1a78"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manip_8cpp.html#a60f1383c5a206a8150fdc5ec70b9e9cf">elimina_lista</a> (<a class="el" href="strutta__dati_8h.html#a13a018e45fed07d44eea183f0b945d4f">turni</a> &amp;testa)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Elimina ogni elemento presente nella lista dei turni.  <a href="#a60f1383c5a206a8150fdc5ec70b9e9cf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manip_8cpp.html#a31bb00b5e8a3701b3bd9c523c1f0abe1">aggiungi_elemento</a> (const char *stringa, <a class="el" href="structturno__t.html">turno_t</a> *&amp;p, <a class="el" href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6ed">personaggio_t</a> persona, int &amp;conta)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifica il parametro nome della struttura <a class="el" href="structgiocatore__t.html" title="struttura dati che rappresenta il singolo giocatore con tutte le caratteristiche ad esso connesse qua...">giocatore_t</a> andando a inserire i valori che l'utente ha inserito da tastiera nelle entry.  <a href="#a31bb00b5e8a3701b3bd9c523c1f0abe1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgiocatore__t.html">giocatore_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manip_8cpp.html#aacc3d4417260df373a3a1e346faa7bfc">individua_carta</a> (<a class="el" href="structturno__t.html">turno_t</a> *<a class="el" href="mono__main_8cpp.html#ab1d7738acc116343f76e7010f1721a8e">punta_turni</a>, const <a class="el" href="structcarta__t.html">carta_t</a> <a class="el" href="mono__main_8cpp.html#acfee36e499475b8e57d156c364e4c84a">tavola</a>[], int &amp;prezzo, char nome[], <a class="el" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8">colore_t</a> &amp;colore, int &amp;prezzo_azioni)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Individua la carta sulla tavola in cui un certo giocatore si trova in determinato momento i valore di ritorno è un puntatore al proprietario di quella determinata carta.  <a href="#aacc3d4417260df373a3a1e346faa7bfc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manip_8cpp.html#a4b106682b889a101e65b1337c957f66f">gestione_spostamenti</a> (<a class="el" href="structturno__t.html">turno_t</a> *<a class="el" href="mono__main_8cpp.html#ab1d7738acc116343f76e7010f1721a8e">punta_turni</a>, int &amp;coord_x, int &amp;coord_y, int &amp;dado_1, int &amp;dado_2)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gestisce il lancio del dato attraverso la generazione di 2 numeri pseudocasuali gestisce lo spostamento in termini di pixel che una certa pedina deve compiere dopo il lancio dei dati.  <a href="#a4b106682b889a101e65b1337c957f66f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manip_8cpp.html#a273c4e4628fe9efe3ae42b002d08d3ed">pagamento_affitto</a> (<a class="el" href="structturno__t.html">turno_t</a> *<a class="el" href="mono__main_8cpp.html#ab1d7738acc116343f76e7010f1721a8e">punta_turni</a>, <a class="el" href="structcarta__t.html">carta_t</a> <a class="el" href="mono__main_8cpp.html#acfee36e499475b8e57d156c364e4c84a">tavola</a>[], bool &amp;penalita, int &amp;costo_affitto)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Funzione che gestisce il pagamento dell'affitto da parte di un certo utente nel caso in cui esso dovesse transitare su una casella di proprietà di un altro giocatore.  <a href="#a273c4e4628fe9efe3ae42b002d08d3ed"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manip_8cpp.html#a0ddad1f35a7baeaa168770202667dbb5">verifica_fallimento</a> (int valore_residuo, int conta_prop)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">verifica che un certo giocatore in un determinato momento si ancora in graado di continuare la partita  <a href="#a0ddad1f35a7baeaa168770202667dbb5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manip_8cpp.html#a8c0a999efb500e37328c62369aac5c4c">estrai_giocatore</a> (<a class="el" href="strutta__dati_8h.html#a13a018e45fed07d44eea183f0b945d4f">turni</a> &amp;testa, <a class="el" href="structturno__t.html">turno_t</a> *&amp;<a class="el" href="mono__main_8cpp.html#ab1d7738acc116343f76e7010f1721a8e">punta_turni</a>, int &amp;num_gc)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">funzione utilizzata dal segnale <a class="el" href="mono__main_8cpp.html#a636d53fb578a95c7e1500c2272b3d7c0" title="Segnale associato al pulsante dichiara fallimento che permette comunica la propria sconfitta o il pro...">handler_dichiara_fallimento</a> che estrae il giocatore dalla lista dei turni il giocatore che in quell'istante ha premuto il pulsante dichiara fallimento  <a href="#a8c0a999efb500e37328c62369aac5c4c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manip_8cpp.html#ab1c67092b1e1e7a43c46eb7073cd7a88">azzera_proprieta</a> (<a class="el" href="structcarta__t.html">carta_t</a> <a class="el" href="mono__main_8cpp.html#acfee36e499475b8e57d156c364e4c84a">tavola</a>[])</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">azzera completamente tutte le proprietà di ogni giocatore, utilizzata dal segnale <a class="el" href="mono__main_8cpp.html#af84d92602708d3414c177466ca706792" title="Segnale che apre la dialogbox per la scelta dei personaggi e azzera le proprietà della precendente pa...">handler_new_match</a>  <a href="#ab1c67092b1e1e7a43c46eb7073cd7a88"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manip_8cpp.html#a64c974f204adf30db0008dbd43e948b2">vendi_tutto</a> (<a class="el" href="structcarta__t.html">carta_t</a> <a class="el" href="mono__main_8cpp.html#acfee36e499475b8e57d156c364e4c84a">tavola</a>[], <a class="el" href="structturno__t.html">turno_t</a> *<a class="el" href="mono__main_8cpp.html#ab1d7738acc116343f76e7010f1721a8e">punta_turni</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">svuota tutte le proprietà di un certo giocatore che decide o è costretto a dichiarare fallimento utilizzata dal segnale <a class="el" href="mono__main_8cpp.html#a636d53fb578a95c7e1500c2272b3d7c0" title="Segnale associato al pulsante dichiara fallimento che permette comunica la propria sconfitta o il pro...">handler_dichiara_fallimento</a>  <a href="#a64c974f204adf30db0008dbd43e948b2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manip_8cpp.html#a469556562fb87592ac10496fd3dfbb2e">controlla_colore_carte</a> (<a class="el" href="structturno__t.html">turno_t</a> *<a class="el" href="mono__main_8cpp.html#ab1d7738acc116343f76e7010f1721a8e">punta_turni</a>, <a class="el" href="structcarta__t.html">carta_t</a> <a class="el" href="mono__main_8cpp.html#acfee36e499475b8e57d156c364e4c84a">tavola</a>[], int indice)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Funzione utilizzata per andare a verificare che un determinato giocatore abbia o meno tutte le carte dello stesso colore, ritorna un valore booleano.  <a href="#a469556562fb87592ac10496fd3dfbb2e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manip_8cpp.html#a52910ca91e612336a4b34570ba9527fd">cerca_nome</a> (<a class="el" href="strutta__dati_8h.html#a13a018e45fed07d44eea183f0b945d4f">turni</a> testa, const char *nome, <a class="el" href="structturno__t.html">turno_t</a> *&amp;app, int num_gc)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">setaccia all'interno della lista circolare tutti i nomi dei giocatori andando a vedere se uno di quello inseriti in partenza è uguale a quello inserito nella entry dello scambia carte  <a href="#a52910ca91e612336a4b34570ba9527fd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manip_8cpp.html#a5978a28c40383af89c24f7c9548d1f68">vendi_carta</a> (<a class="el" href="structturno__t.html">turno_t</a> *<a class="el" href="mono__main_8cpp.html#ab1d7738acc116343f76e7010f1721a8e">punta_turni</a>, <a class="el" href="structcarta__t.html">carta_t</a> <a class="el" href="mono__main_8cpp.html#acfee36e499475b8e57d156c364e4c84a">tavola</a>[], const char *nome, int &amp;indice)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">vende una determinata carta scelta dalla combo box e ne azzera i parametri  <a href="#a5978a28c40383af89c24f7c9548d1f68"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manip_8cpp.html#aee985d4810ff075cee3ae81a02a7fccc">effettua_scambio</a> (<a class="el" href="structcarta__t.html">carta_t</a> <a class="el" href="mono__main_8cpp.html#acfee36e499475b8e57d156c364e4c84a">tavola</a>[], const char *nome1, const char *nome2, int &amp;indice_carta_1, int &amp;indice_carta_2)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">effettua lo scambio delle carte tra 2 giocatori  <a href="#aee985d4810ff075cee3ae81a02a7fccc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manip_8cpp.html#a7ec3287e3a97b930fa5bf24552afa324">seleziona_personaggio_movimento</a> (<a class="el" href="structturno__t.html">turno_t</a> *app, int val, bool scelta_pers_active)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">funzione utilizzata da::carica_partita per andare a scegliere a quale personaggio o movimento corrispondesse un certo valore riportato nel file di salvataggio  <a href="#a7ec3287e3a97b930fa5bf24552afa324"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="manip_8cpp.html#a58a5452a4f98b1f91c457c8711c67d66">svuota_azioni_stesso_colore</a> (<a class="el" href="structcarta__t.html">carta_t</a> <a class="el" href="mono__main_8cpp.html#acfee36e499475b8e57d156c364e4c84a">tavola</a>[], int indice)</td></tr>
+</table>
+<hr/><h2>Documentazione delle funzioni</h2>
+<a class="anchor" id="a31bb00b5e8a3701b3bd9c523c1f0abe1"></a><!-- doxytag: member="manip.cpp::aggiungi_elemento" ref="a31bb00b5e8a3701b3bd9c523c1f0abe1" args="(const char *stringa, turno_t *&amp;p, personaggio_t persona, int &amp;conta)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="manip_8h.html#a31bb00b5e8a3701b3bd9c523c1f0abe1">aggiungi_elemento</a> </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>stringa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structturno__t.html">turno_t</a> *&amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6ed">personaggio_t</a>&#160;</td>
+          <td class="paramname"><em>persona</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>conta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Modifica il parametro nome della struttura <a class="el" href="structgiocatore__t.html" title="struttura dati che rappresenta il singolo giocatore con tutte le caratteristiche ad esso connesse qua...">giocatore_t</a> andando a inserire i valori che l'utente ha inserito da tastiera nelle entry. </p>
+<div class="fragment"><pre class="fragment">{
+        <a class="code" href="strutta__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;<span class="stringliteral">&quot;INIZIO DEBUG ACQUSIZIONE NOMI: &quot;</span>&lt;&lt;endl);
+        
+         istringstream s(stringa);
+         <span class="keywordtype">char</span> nomeG[<a class="code" href="strutta__dati_8h.html#a669918f54dab8982e88cc3c15a03d9d3" title="dimensione massima delle stringhe">DIM_STRINGHE</a>];
+         s&gt;&gt;nomeG;
+         <span class="keywordflow">if</span>((nomeG[0]&gt;=<span class="charliteral">&#39;a&#39;</span> &amp;&amp; nomeG[0]&lt;=<span class="charliteral">&#39;z&#39;</span>) || (nomeG[0]&gt;=<span class="charliteral">&#39;A&#39;</span> &amp;&amp; nomeG[0]&lt;=<span class="charliteral">&#39;Z&#39;</span>))
+         {
+                strcpy(p-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#ab5545bf977dd406e5e1c0686b602141c">nome</a>,nomeG);
+                <a class="code" href="strutta__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;<span class="stringliteral">&quot;NOME: &quot;</span>&lt;&lt;p-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#ab5545bf977dd406e5e1c0686b602141c">nome</a>&lt;&lt;endl);
+                p-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a1a28dc9f950ff418dc3d69434e0a5312">pers</a>=persona;
+                p=p-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a>;
+                conta++;
+                <span class="keywordflow">return</span> <span class="keyword">false</span>;
+         }       
+         s.clear();
+         <span class="keywordflow">return</span> <span class="keyword">true</span>;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="ab1c67092b1e1e7a43c46eb7073cd7a88"></a><!-- doxytag: member="manip.cpp::azzera_proprieta" ref="ab1c67092b1e1e7a43c46eb7073cd7a88" args="(carta_t tavola[])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="manip_8h.html#ab1c67092b1e1e7a43c46eb7073cd7a88">azzera_proprieta</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcarta__t.html">carta_t</a>&#160;</td>
+          <td class="paramname"><em>tavola</em>[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>azzera completamente tutte le proprietà di ogni giocatore, utilizzata dal segnale <a class="el" href="mono__main_8cpp.html#af84d92602708d3414c177466ca706792" title="Segnale che apre la dialogbox per la scelta dei personaggi e azzera le proprietà della precendente pa...">handler_new_match</a> </p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;<a class="code" href="strutta__dati_8h.html#ad43f8c91bcd12ba9c244c810b7933c0a" title="massimo numero di carte presenti nel gioco">MAX_BOARD</a>;i++)
+                <span class="keywordflow">if</span>(tavola[i].prop!=NULL)
+                        tavola[i].<a class="code" href="structcarta__t.html#a4900c3bc5f551c9d4983509d620be2e9">prop</a>=NULL;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a52910ca91e612336a4b34570ba9527fd"></a><!-- doxytag: member="manip.cpp::cerca_nome" ref="a52910ca91e612336a4b34570ba9527fd" args="(turni testa, const char *nome, turno_t *&amp;app, int num_gc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="manip_8h.html#a52910ca91e612336a4b34570ba9527fd">cerca_nome</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="strutta__dati_8h.html#a13a018e45fed07d44eea183f0b945d4f">turni</a>&#160;</td>
+          <td class="paramname"><em>testa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>nome</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structturno__t.html">turno_t</a> *&amp;&#160;</td>
+          <td class="paramname"><em>app</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_gc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>setaccia all'interno della lista circolare tutti i nomi dei giocatori andando a vedere se uno di quello inseriti in partenza è uguale a quello inserito nella entry dello scambia carte </p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordtype">int</span> i=0;
+        <span class="keywordflow">while</span>(i&lt;num_gc)
+        {
+                <span class="keywordflow">if</span>(strcmp(app-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#ab5545bf977dd406e5e1c0686b602141c">nome</a>,nome)==0)
+                {
+                        <span class="keywordflow">return</span> <span class="keyword">true</span>;
+                }
+                <span class="comment">//cout&lt;&lt;&quot;nome in lista: &quot;&lt;&lt;app-&gt;giocatore.nome&lt;&lt;endl;</span>
+                <span class="comment">//cout&lt;&lt;&quot;nome inserito: &quot;&lt;&lt;nome&lt;&lt;endl;</span>
+                app=app-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a>;
+                i++;
+        }
+        <span class="keywordflow">return</span> <span class="keyword">false</span>;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a469556562fb87592ac10496fd3dfbb2e"></a><!-- doxytag: member="manip.cpp::controlla_colore_carte" ref="a469556562fb87592ac10496fd3dfbb2e" args="(turno_t *punta_turni, carta_t tavola[], int indice)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="manip_8h.html#a469556562fb87592ac10496fd3dfbb2e">controlla_colore_carte</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structturno__t.html">turno_t</a> *&#160;</td>
+          <td class="paramname"><em>punta_turni</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcarta__t.html">carta_t</a>&#160;</td>
+          <td class="paramname"><em>tavola</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indice</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funzione utilizzata per andare a verificare che un determinato giocatore abbia o meno tutte le carte dello stesso colore, ritorna un valore booleano. </p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordtype">int</span> conta_stesso_colore=0;
+        
+        assert(tavola[indice].prop==&amp;(punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>));
+        
+                <a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8" title="enumerato che rappresenta il colore di ogni carta nello specifico i valari finali stanno: SC: senza c...">colore_t</a> cl=tavola[indice].<a class="code" href="structcarta__t.html#a74a9b5d269efd9d8e3a5bd39f4fc381f">colore</a>;
+                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;<a class="code" href="strutta__dati_8h.html#ad43f8c91bcd12ba9c244c810b7933c0a" title="massimo numero di carte presenti nel gioco">MAX_BOARD</a>;i++)            
+                        <span class="keywordflow">if</span>(tavola[i].prop==&amp;(punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>) &amp;&amp; cl==tavola[i].<a class="code" href="structcarta__t.html#a74a9b5d269efd9d8e3a5bd39f4fc381f">colore</a>)
+                                conta_stesso_colore++;
+                                
+        <span class="keywordflow">if</span>(conta_stesso_colore==2 &amp;&amp; (tavola[indice].colore==<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a28f41f1144eee94834387e9a6a088bc1">V</a> ||
+                                                        tavola[indice].colore==<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8af603e0d046225e81459ffe6d8ee5ba6b">BL</a>))
+                <span class="keywordflow">return</span> <span class="keyword">true</span>;
+        <span class="keywordflow">else</span>
+        {
+                <span class="keywordflow">if</span>(conta_stesso_colore==3)
+                        <span class="keywordflow">return</span> <span class="keyword">true</span>;
+        }
+        <span class="keywordflow">return</span> <span class="keyword">false</span>;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="aa40e7189ef238d9befc3eb03d8e5eb06"></a><!-- doxytag: member="manip.cpp::crea_turni" ref="aa40e7189ef238d9befc3eb03d8e5eb06" args="(turni &amp;testa, int num_giocatori)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="manip_8h.html#aa40e7189ef238d9befc3eb03d8e5eb06">crea_turni</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="strutta__dati_8h.html#a13a018e45fed07d44eea183f0b945d4f">turni</a> &amp;&#160;</td>
+          <td class="paramname"><em>testa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_giocatori</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Si occupa di creare la lista circolare dei turni. </p>
+<p>crea i turni in base al numero di giocatori inseriti il numero di giocatori corrisponde al numero di elementi della lista dei turni. </p>
+<div class="fragment"><pre class="fragment">{
+        assert(num_giocatori!=0);
+        
+        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;num_giocatori;i++)
+        {
+                <a class="code" href="structturno__t.html" title="Struttura dati che rappresenta un turno all&#39;interno del quale si trovano il nome del giocatore di che...">turno_t</a> *p=<span class="keyword">new</span> <a class="code" href="structturno__t.html" title="Struttura dati che rappresenta un turno all&#39;interno del quale si trovano il nome del giocatore di che...">turno_t</a>;
+                p-&gt;<a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4" title="variabile che mi stabilisce su quale carta un certo giocatore si trova è l&#39;elemento di unione tra la ...">posizione_nelle_carte</a>=0;
+                p-&gt;<a class="code" href="structturno__t.html#a326ce226c3caea11b5c503f13ad566f9">move</a>=<a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1a898fd7abd6aae10a03fc8f61543e1ab6">SX</a>;
+                p-&gt;<a class="code" href="structturno__t.html#a95196c96b48b65663cac7c21e0fe91ca">coord_x</a>=<a class="code" href="strutta__dati_8h.html#a2e77c529a369c47c0eb367f797919cc0" title="limite destro per la pedina in pixel">LIMITE_DX_PX</a>;
+                p-&gt;<a class="code" href="structturno__t.html#a947c18dac8b4f4e8c9c982fe13ef9209">coord_y</a>=<a class="code" href="strutta__dati_8h.html#a109d000c036a060c6dcc60762ef27eef" title="limite inferiore per la pedina in pixel">LIMITE_DO_PX</a>;
+                strcpy(p-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#ab5545bf977dd406e5e1c0686b602141c">nome</a>,<span class="stringliteral">&quot;VUOTO&quot;</span>);
+                p-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>=<a class="code" href="strutta__dati_8h.html#abea96c5c88c5ab5a40e63a4f800ad89c" title="denaro di partenza del gioco">DENARO</a>;
+                p-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a5bb2d982a9ea44e28636477c57feac0e">conta_propr</a>=0;
+                p-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a4d6e0cf716e9d00ef91937209d8e03c8">prigione</a>=<span class="keyword">false</span>;
+                <span class="keywordflow">if</span>(testa==NULL)
+                {
+                        testa=p;
+                        p-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a>=testa;
+                }
+                <span class="keywordflow">else</span>
+                {
+                        <a class="code" href="structturno__t.html" title="Struttura dati che rappresenta un turno all&#39;interno del quale si trovano il nome del giocatore di che...">turno_t</a> *pp=<a class="code" href="manip_8cpp.html#aa68fd72a8ba982beecef16de1319006e" title="Questa funzione ritorna il puntatore all&#39;ultimo elemento della lista dei turni.">ultimo_turno</a>(testa);
+                        p-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a>=pp-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a>;
+                        pp-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a>=p;
+                }
+        }
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="aee985d4810ff075cee3ae81a02a7fccc"></a><!-- doxytag: member="manip.cpp::effettua_scambio" ref="aee985d4810ff075cee3ae81a02a7fccc" args="(carta_t tavola[], const char *nome1, const char *nome2, int &amp;indice_carta_1, int &amp;indice_carta_2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="manip_8h.html#aee985d4810ff075cee3ae81a02a7fccc">effettua_scambio</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcarta__t.html">carta_t</a>&#160;</td>
+          <td class="paramname"><em>tavola</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>nome1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>nome2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>indice_carta_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>indice_carta_2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>effettua lo scambio delle carte tra 2 giocatori </p>
+<div class="fragment"><pre class="fragment">{
+        <a class="code" href="structgiocatore__t.html" title="struttura dati che rappresenta il singolo giocatore con tutte le caratteristiche ad esso connesse qua...">giocatore_t</a> *app;
+        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;<a class="code" href="strutta__dati_8h.html#ad43f8c91bcd12ba9c244c810b7933c0a" title="massimo numero di carte presenti nel gioco">MAX_BOARD</a>;i++)
+        {
+                <span class="keywordflow">if</span>(strcmp(tavola[i].nome_carta,nome1)==0)
+                        indice_carta_1=i;
+                <span class="keywordflow">if</span>(strcmp(tavola[i].nome_carta,nome2)==0)
+                        indice_carta_2=i;
+        }
+        app=tavola[indice_carta_1].<a class="code" href="structcarta__t.html#a4900c3bc5f551c9d4983509d620be2e9">prop</a>;
+        tavola[indice_carta_1].<a class="code" href="structcarta__t.html#a4900c3bc5f551c9d4983509d620be2e9">prop</a>=tavola[indice_carta_2].<a class="code" href="structcarta__t.html#a4900c3bc5f551c9d4983509d620be2e9">prop</a>;
+        tavola[indice_carta_2].<a class="code" href="structcarta__t.html#a4900c3bc5f551c9d4983509d620be2e9">prop</a>=app;
+        
+        tavola[indice_carta_1].<a class="code" href="structcarta__t.html#aabc77ee3a44b6abd8821e050110967fc">num_azioni</a>=0;
+        tavola[indice_carta_2].<a class="code" href="structcarta__t.html#aabc77ee3a44b6abd8821e050110967fc">num_azioni</a>=0;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a60f1383c5a206a8150fdc5ec70b9e9cf"></a><!-- doxytag: member="manip.cpp::elimina_lista" ref="a60f1383c5a206a8150fdc5ec70b9e9cf" args="(turni &amp;testa)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="manip_8h.html#a60f1383c5a206a8150fdc5ec70b9e9cf">elimina_lista</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="strutta__dati_8h.html#a13a018e45fed07d44eea183f0b945d4f">turni</a> &amp;&#160;</td>
+          <td class="paramname"><em>testa</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Elimina ogni elemento presente nella lista dei turni. </p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordflow">if</span>(testa==NULL)
+                <span class="keywordflow">return</span>;
+        <span class="comment">//fermo la circolarità della lista</span>
+        <a class="code" href="structturno__t.html" title="Struttura dati che rappresenta un turno all&#39;interno del quale si trovano il nome del giocatore di che...">turno_t</a> *app=<a class="code" href="manip_8cpp.html#aa68fd72a8ba982beecef16de1319006e" title="Questa funzione ritorna il puntatore all&#39;ultimo elemento della lista dei turni.">ultimo_turno</a>(testa);
+        app-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a>=NULL;
+     <span class="keywordflow">while</span> (testa != NULL) {
+           <a class="code" href="structturno__t.html" title="Struttura dati che rappresenta un turno all&#39;interno del quale si trovano il nome del giocatore di che...">turno_t</a> *q = testa-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a> ;
+
+           <span class="keyword">delete</span> testa ;  <span class="comment">//Attenzione: dopo la delete non posso dereferenziare testa!</span>
+           testa = q ;  
+     }
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a8c0a999efb500e37328c62369aac5c4c"></a><!-- doxytag: member="manip.cpp::estrai_giocatore" ref="a8c0a999efb500e37328c62369aac5c4c" args="(turni &amp;testa, turno_t *&amp;punta_turni, int &amp;num_gc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="manip_8h.html#a8c0a999efb500e37328c62369aac5c4c">estrai_giocatore</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="strutta__dati_8h.html#a13a018e45fed07d44eea183f0b945d4f">turni</a> &amp;&#160;</td>
+          <td class="paramname"><em>testa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structturno__t.html">turno_t</a> *&amp;&#160;</td>
+          <td class="paramname"><em>punta_turni</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>num_gc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>funzione utilizzata dal segnale <a class="el" href="mono__main_8cpp.html#a636d53fb578a95c7e1500c2272b3d7c0" title="Segnale associato al pulsante dichiara fallimento che permette comunica la propria sconfitta o il pro...">handler_dichiara_fallimento</a> che estrae il giocatore dalla lista dei turni il giocatore che in quell'istante ha premuto il pulsante dichiara fallimento </p>
+<div class="fragment"><pre class="fragment">{
+        assert(testa!=NULL &amp;&amp; num_gc!=0);
+        
+        <a class="code" href="structturno__t.html" title="Struttura dati che rappresenta un turno all&#39;interno del quale si trovano il nome del giocatore di che...">turno_t</a> *app=testa;
+        <span class="keywordflow">if</span>(testa==punta_turni)
+        {
+                <a class="code" href="structturno__t.html" title="Struttura dati che rappresenta un turno all&#39;interno del quale si trovano il nome del giocatore di che...">turno_t</a> *ultimo=<a class="code" href="manip_8cpp.html#aa68fd72a8ba982beecef16de1319006e" title="Questa funzione ritorna il puntatore all&#39;ultimo elemento della lista dei turni.">ultimo_turno</a>(testa);
+                testa=testa-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a>;
+                punta_turni=punta_turni-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a>; 
+                ultimo-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a>=testa;
+        }
+        <span class="keywordflow">else</span>
+        {
+                app=app-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a>;
+                <a class="code" href="structturno__t.html" title="Struttura dati che rappresenta un turno all&#39;interno del quale si trovano il nome del giocatore di che...">turno_t</a> *prec=testa;
+                <span class="keywordflow">while</span>(app!=punta_turni)
+                {
+                        app=app-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a>;
+                        prec=prec-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a>;
+                }
+                prec-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a>=punta_turni-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a>;
+                punta_turni=punta_turni-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a>; 
+        }
+        num_gc--;
+        <span class="keyword">delete</span> app;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a4b106682b889a101e65b1337c957f66f"></a><!-- doxytag: member="manip.cpp::gestione_spostamenti" ref="a4b106682b889a101e65b1337c957f66f" args="(turno_t *punta_turni, int &amp;coord_x, int &amp;coord_y, int &amp;dado_1, int &amp;dado_2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="manip_8h.html#a4b106682b889a101e65b1337c957f66f">gestione_spostamenti</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structturno__t.html">turno_t</a> *&#160;</td>
+          <td class="paramname"><em>punta_turni</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>coord_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>coord_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>dado_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>dado_2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Gestisce il lancio del dato attraverso la generazione di 2 numeri pseudocasuali gestisce lo spostamento in termini di pixel che una certa pedina deve compiere dopo il lancio dei dati. </p>
+<p>Questa variabile rappresenta un piccolo arrotondamento di pixel da effettuare quando si passa da uno dei 4 angoli in quanto queste caselle non sono proporzionali con le altre e questo comporta durante la fase di spostamento dei piccoli errori e spostamenti inesatti delle pedine che col continuare del gioco si propagano generando spostamenti visibilmente errati i valori sono scelti in maniera arbitraria in base alla certa "curva da effettuare"</p>
+<div class="fragment"><pre class="fragment">{       
+        <a class="code" href="strutta__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;<span class="stringliteral">&quot;INIZIO DEBUG SPOSTAMENTI: &quot;</span>&lt;&lt;endl);
+        <span class="keywordtype">int</span> offset;
+        srand(time(0));
+        dado_1=rand()%6+1;
+        dado_2=rand()%6+1;
+        <span class="keywordtype">int</span> dado=dado_1+dado_2;
+        punta_turni-&gt;<a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4" title="variabile che mi stabilisce su quale carta un certo giocatore si trova è l&#39;elemento di unione tra la ...">posizione_nelle_carte</a>+=dado;
+        <a class="code" href="strutta__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;<span class="stringliteral">&quot;posi nelle carte: &quot;</span>&lt;&lt;punta_turni-&gt;<a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4" title="variabile che mi stabilisce su quale carta un certo giocatore si trova è l&#39;elemento di unione tra la ...">posizione_nelle_carte</a>&lt;&lt;endl);
+        <span class="keywordflow">if</span>(punta_turni-&gt;<a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4" title="variabile che mi stabilisce su quale carta un certo giocatore si trova è l&#39;elemento di unione tra la ...">posizione_nelle_carte</a>&gt;=<a class="code" href="strutta__dati_8h.html#ad43f8c91bcd12ba9c244c810b7933c0a" title="massimo numero di carte presenti nel gioco">MAX_BOARD</a>)
+        {
+                punta_turni-&gt;<a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4" title="variabile che mi stabilisce su quale carta un certo giocatore si trova è l&#39;elemento di unione tra la ...">posizione_nelle_carte</a>=punta_turni-&gt;<a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4" title="variabile che mi stabilisce su quale carta un certo giocatore si trova è l&#39;elemento di unione tra la ...">posizione_nelle_carte</a>-<a class="code" href="strutta__dati_8h.html#ad43f8c91bcd12ba9c244c810b7933c0a" title="massimo numero di carte presenti nel gioco">MAX_BOARD</a>;
+                <a class="code" href="strutta__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;<span class="stringliteral">&quot;Nuova posizione se supera 40: &quot;</span>&lt;&lt;punta_turni-&gt;<a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4" title="variabile che mi stabilisce su quale carta un certo giocatore si trova è l&#39;elemento di unione tra la ...">posizione_nelle_carte</a>&lt;&lt;endl); 
+        }
+        <a class="code" href="strutta__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;<span class="stringliteral">&quot;Dado: &quot;</span>&lt;&lt;dado&lt;&lt;endl);
+        
+        <span class="keywordflow">if</span>(punta_turni-&gt;<a class="code" href="structturno__t.html#a326ce226c3caea11b5c503f13ad566f9">move</a>==<a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1a898fd7abd6aae10a03fc8f61543e1ab6">SX</a>)
+        {
+                coord_x-=(<a class="code" href="strutta__dati_8h.html#a64b4127eab65af02324d9deb906ac125" title="grandezza un pixel di una carta sulla mappa utile per gestire i movimenti delle pedine">PIXEL_CARTA</a>*dado);
+                <span class="keywordflow">if</span>(coord_x&lt;<a class="code" href="strutta__dati_8h.html#a18f3b76839e1b24b872ec84ef9b783ed" title="limite sinistro per la pedina in pixel">LIMITE_SX_PX</a>)
+                {
+                        primo_if:
+                        <span class="comment">//utilizzo la funzione abs in quanto uno spostamento verso </span>
+                        <span class="comment">//SX mi portebbe ad avere valori della x &lt; 0</span>
+                        <span class="keywordtype">int</span> app=abs(coord_x);
+                        <span class="comment">//cout&lt;&lt;&quot;posi: &quot;&lt;&lt;endl;</span>
+                        <span class="comment">//cout&lt;&lt;app&lt;&lt;endl;</span>
+                        offset=30;
+                        coord_y-=(app+offset);
+                        coord_x=5;
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a326ce226c3caea11b5c503f13ad566f9">move</a>=<a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1aba595d8bca8bc5e67c37c0a9d89becfa">UP</a>;
+                        <span class="keywordflow">if</span>(coord_y&lt;<a class="code" href="strutta__dati_8h.html#a4a84892ac2d2b7b12394b6ce11f098c2" title="limite superiore per la pedina in pixel">LIMITE_UP_PX</a>)
+                                <span class="keywordflow">goto</span> pross_cfr;
+                }
+        }
+        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(punta_turni-&gt;<a class="code" href="structturno__t.html#a326ce226c3caea11b5c503f13ad566f9">move</a>==<a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1aba595d8bca8bc5e67c37c0a9d89becfa">UP</a>)
+        {
+                coord_y-=(<a class="code" href="strutta__dati_8h.html#a64b4127eab65af02324d9deb906ac125" title="grandezza un pixel di una carta sulla mappa utile per gestire i movimenti delle pedine">PIXEL_CARTA</a>*dado);
+                <span class="keywordflow">if</span>(coord_y&lt;<a class="code" href="strutta__dati_8h.html#a4a84892ac2d2b7b12394b6ce11f098c2" title="limite superiore per la pedina in pixel">LIMITE_UP_PX</a>)
+                {
+                        pross_cfr:
+                        <span class="comment">//utilizzo la funzione abs in quanto lo spostamento verso </span>
+                        <span class="comment">//l&#39;alto potrebbe generare un valore della y negativo</span>
+                        <span class="keywordtype">int</span> app=abs(coord_y);
+                        offset=35;
+                        coord_x+=(app+offset);
+                        coord_y=5;
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a326ce226c3caea11b5c503f13ad566f9">move</a>=<a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1a22dc95a35fbd833d9908928812979156">DX</a>;
+                        <span class="keywordflow">if</span>(coord_x&gt;<a class="code" href="strutta__dati_8h.html#a2e77c529a369c47c0eb367f797919cc0" title="limite destro per la pedina in pixel">LIMITE_DX_PX</a>)
+                                <span class="keywordflow">goto</span> cfr_pross;
+                }
+        }
+        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(punta_turni-&gt;<a class="code" href="structturno__t.html#a326ce226c3caea11b5c503f13ad566f9">move</a>==<a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1a22dc95a35fbd833d9908928812979156">DX</a>)
+        {
+                coord_x+=(<a class="code" href="strutta__dati_8h.html#a64b4127eab65af02324d9deb906ac125" title="grandezza un pixel di una carta sulla mappa utile per gestire i movimenti delle pedine">PIXEL_CARTA</a>*dado);
+                <span class="keywordflow">if</span>(coord_x&gt;<a class="code" href="strutta__dati_8h.html#a2e77c529a369c47c0eb367f797919cc0" title="limite destro per la pedina in pixel">LIMITE_DX_PX</a>)
+                {
+                        cfr_pross:
+                        offset=20;
+                        coord_y+=(coord_x-425+offset);
+                        coord_x=440;
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a326ce226c3caea11b5c503f13ad566f9">move</a>=<a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1abfea6036e64d9c7c773d277a57d2f959">DO</a>;
+                }
+        }
+        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(punta_turni-&gt;<a class="code" href="structturno__t.html#a326ce226c3caea11b5c503f13ad566f9">move</a>==<a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1abfea6036e64d9c7c773d277a57d2f959">DO</a>)
+        {
+                coord_y+=(<a class="code" href="strutta__dati_8h.html#a64b4127eab65af02324d9deb906ac125" title="grandezza un pixel di una carta sulla mappa utile per gestire i movimenti delle pedine">PIXEL_CARTA</a>*dado);
+                <span class="keywordflow">if</span>(coord_y&gt;<a class="code" href="strutta__dati_8h.html#a109d000c036a060c6dcc60762ef27eef" title="limite inferiore per la pedina in pixel">LIMITE_DO_PX</a>)
+                {
+                        offset=30;
+                        coord_x-=(coord_y-450+offset);
+                        coord_y=450;
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a326ce226c3caea11b5c503f13ad566f9">move</a>=<a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1a898fd7abd6aae10a03fc8f61543e1ab6">SX</a>;
+                }
+        }
+        <a class="code" href="strutta__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;<span class="stringliteral">&quot;coordinate: &quot;</span>&lt;&lt;<span class="stringliteral">&quot;X: &quot;</span>&lt;&lt;coord_x&lt;&lt;<span class="stringliteral">&quot; Y: &quot;</span>&lt;&lt;coord_y&lt;&lt;endl);
+        
+        <span class="keywordflow">return</span> dado;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a56b03a06475749aac03c307595ecd080"></a><!-- doxytag: member="manip.cpp::imposta_colore" ref="a56b03a06475749aac03c307595ecd080" args="(carta_t tavola[], char colore[], int i)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="manip_8h.html#a56b03a06475749aac03c307595ecd080">imposta_colore</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcarta__t.html">carta_t</a>&#160;</td>
+          <td class="paramname"><em>tavola</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>colore</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funziona usata nella funziona <a class="el" href="fileIO_8h.html#a551dc65f05529fe5f12600a78cb7a497" title="carico l&#39;array con il quale è implementata la struttura dati carta_t con valori che si trovano in fil...">carica_board</a> e permette di decide quale colore attribuire a una determinata carta. </p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordflow">if</span>(strcmp(colore,<span class="stringliteral">&quot;V&quot;</span>)==0)
+                tavola[i].<a class="code" href="structcarta__t.html#a74a9b5d269efd9d8e3a5bd39f4fc381f">colore</a>=<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a28f41f1144eee94834387e9a6a088bc1">V</a>;
+        <span class="keywordflow">if</span>(strcmp(colore,<span class="stringliteral">&quot;AZ&quot;</span>)==0)
+                tavola[i].<a class="code" href="structcarta__t.html#a74a9b5d269efd9d8e3a5bd39f4fc381f">colore</a>=<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a0aa3e60ba1c575f32d00afb3918a63ee">AZ</a>;
+        <span class="keywordflow">if</span>(strcmp(colore,<span class="stringliteral">&quot;RO&quot;</span>)==0)
+                tavola[i].<a class="code" href="structcarta__t.html#a74a9b5d269efd9d8e3a5bd39f4fc381f">colore</a>=<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a42e9aa764b9ee7ecf7e668462de6f96d">RO</a>;
+        <span class="keywordflow">if</span>(strcmp(colore,<span class="stringliteral">&quot;AR&quot;</span>)==0)
+                tavola[i].<a class="code" href="structcarta__t.html#a74a9b5d269efd9d8e3a5bd39f4fc381f">colore</a>=<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8aaa54e8220a1a7dbfd4cf3843b1b04422">AR</a>;
+        <span class="keywordflow">if</span>(strcmp(colore,<span class="stringliteral">&quot;ROS&quot;</span>)==0)
+                tavola[i].<a class="code" href="structcarta__t.html#a74a9b5d269efd9d8e3a5bd39f4fc381f">colore</a>=<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8ae76f903aeec6992ab7a1a681402724b1">ROS</a>;
+        <span class="keywordflow">if</span>(strcmp(colore,<span class="stringliteral">&quot;G&quot;</span>)==0)
+                tavola[i].<a class="code" href="structcarta__t.html#a74a9b5d269efd9d8e3a5bd39f4fc381f">colore</a>=<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a2fe993340f6abb2234e543cd427df70b">G</a>;
+        <span class="keywordflow">if</span>(strcmp(colore,<span class="stringliteral">&quot;VE&quot;</span>)==0)
+                tavola[i].<a class="code" href="structcarta__t.html#a74a9b5d269efd9d8e3a5bd39f4fc381f">colore</a>=<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a6f5573fd06b8a8917889f3820575a09d">VE</a>;
+        <span class="keywordflow">if</span>(strcmp(colore,<span class="stringliteral">&quot;BL&quot;</span>)==0)
+                tavola[i].<a class="code" href="structcarta__t.html#a74a9b5d269efd9d8e3a5bd39f4fc381f">colore</a>=<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8af603e0d046225e81459ffe6d8ee5ba6b">BL</a>;
+        <span class="keywordflow">if</span>(strcmp(colore,<span class="stringliteral">&quot;SC&quot;</span>)==0)
+                tavola[i].<a class="code" href="structcarta__t.html#a74a9b5d269efd9d8e3a5bd39f4fc381f">colore</a>=<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a9b691ca253b009f6c549a080f2442754">SC</a>;
+        <span class="keywordflow">if</span>(strcmp(colore,<span class="stringliteral">&quot;NC&quot;</span>)==0)
+                tavola[i].<a class="code" href="structcarta__t.html#a74a9b5d269efd9d8e3a5bd39f4fc381f">colore</a>=<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a3dbd1016ea99d087d747530418b89a01">NC</a>;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="aacc3d4417260df373a3a1e346faa7bfc"></a><!-- doxytag: member="manip.cpp::individua_carta" ref="aacc3d4417260df373a3a1e346faa7bfc" args="(turno_t *punta_turni, const carta_t tavola[], int &amp;prezzo, char nome[], colore_t &amp;colore, int &amp;prezzo_azioni)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structgiocatore__t.html">giocatore_t</a>* <a class="el" href="manip_8h.html#aacc3d4417260df373a3a1e346faa7bfc">individua_carta</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structturno__t.html">turno_t</a> *&#160;</td>
+          <td class="paramname"><em>punta_turni</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcarta__t.html">carta_t</a>&#160;</td>
+          <td class="paramname"><em>tavola</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>prezzo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>nome</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8">colore_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>colore</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>prezzo_azioni</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Individua la carta sulla tavola in cui un certo giocatore si trova in determinato momento i valore di ritorno è un puntatore al proprietario di quella determinata carta. </p>
+<div class="fragment"><pre class="fragment">{
+        strcpy(nome,tavola[punta_turni-&gt;<a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4" title="variabile che mi stabilisce su quale carta un certo giocatore si trova è l&#39;elemento di unione tra la ...">posizione_nelle_carte</a>].<a class="code" href="structcarta__t.html#a07384c80fb3eddd513af82d19656e50a">nome_carta</a>);
+        prezzo=tavola[punta_turni-&gt;<a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4" title="variabile che mi stabilisce su quale carta un certo giocatore si trova è l&#39;elemento di unione tra la ...">posizione_nelle_carte</a>].<a class="code" href="structcarta__t.html#a62b7fe7b8c645137f9488800ab45c1a1">prezzo</a>;
+        colore=tavola[punta_turni-&gt;<a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4" title="variabile che mi stabilisce su quale carta un certo giocatore si trova è l&#39;elemento di unione tra la ...">posizione_nelle_carte</a>].<a class="code" href="structcarta__t.html#a74a9b5d269efd9d8e3a5bd39f4fc381f">colore</a>;
+        prezzo_azioni=tavola[punta_turni-&gt;<a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4" title="variabile che mi stabilisce su quale carta un certo giocatore si trova è l&#39;elemento di unione tra la ...">posizione_nelle_carte</a>].<a class="code" href="structcarta__t.html#a4962906c2592c2f4844270aed03e7d9b">val_azioni</a>;
+        <span class="keywordflow">return</span> tavola[punta_turni-&gt;<a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4" title="variabile che mi stabilisce su quale carta un certo giocatore si trova è l&#39;elemento di unione tra la ...">posizione_nelle_carte</a>].<a class="code" href="structcarta__t.html#a4900c3bc5f551c9d4983509d620be2e9">prop</a>;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a273c4e4628fe9efe3ae42b002d08d3ed"></a><!-- doxytag: member="manip.cpp::pagamento_affitto" ref="a273c4e4628fe9efe3ae42b002d08d3ed" args="(turno_t *punta_turni, carta_t tavola[], bool &amp;penalita, int &amp;costo_affitto)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="manip_8h.html#a273c4e4628fe9efe3ae42b002d08d3ed">pagamento_affitto</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structturno__t.html">turno_t</a> *&#160;</td>
+          <td class="paramname"><em>punta_turni</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcarta__t.html">carta_t</a>&#160;</td>
+          <td class="paramname"><em>tavola</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>penalita</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>costo_affitto</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funzione che gestisce il pagamento dell'affitto da parte di un certo utente nel caso in cui esso dovesse transitare su una casella di proprietà di un altro giocatore. </p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordtype">int</span> affitto=tavola[punta_turni-&gt;<a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4" title="variabile che mi stabilisce su quale carta un certo giocatore si trova è l&#39;elemento di unione tra la ...">posizione_nelle_carte</a>].<a class="code" href="structcarta__t.html#aee3e414144a734939b9fd8f7f3ac5bc4">affitto</a>;
+        <span class="comment">//pagamento obbligato alla banca(da aggiungere)</span>
+        <span class="keywordflow">if</span>(strcmp(tavola[punta_turni-&gt;<a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4" title="variabile che mi stabilisce su quale carta un certo giocatore si trova è l&#39;elemento di unione tra la ...">posizione_nelle_carte</a>].<a class="code" href="structcarta__t.html#a07384c80fb3eddd513af82d19656e50a">nome_carta</a>,<span class="stringliteral">&quot;ZoomPass&quot;</span>)==0 ||
+                strcmp(tavola[punta_turni-&gt;<a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4" title="variabile che mi stabilisce su quale carta un certo giocatore si trova è l&#39;elemento di unione tra la ...">posizione_nelle_carte</a>].<a class="code" href="structcarta__t.html#a07384c80fb3eddd513af82d19656e50a">nome_carta</a>,<span class="stringliteral">&quot;PayPal&quot;</span>)==0)
+                {
+                punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>-=affitto;
+                penalita=<span class="keyword">true</span>;
+                costo_affitto=affitto;
+                <span class="keywordflow">return</span> <span class="keyword">true</span>;
+                }
+        <span class="keywordflow">if</span>(tavola[punta_turni-&gt;<a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4" title="variabile che mi stabilisce su quale carta un certo giocatore si trova è l&#39;elemento di unione tra la ...">posizione_nelle_carte</a>].<a class="code" href="structcarta__t.html#a4900c3bc5f551c9d4983509d620be2e9">prop</a>==NULL)
+                <span class="keywordflow">return</span> <span class="keyword">false</span>;
+        <span class="keywordflow">else</span>
+        {
+                <span class="keywordtype">char</span> nome[<a class="code" href="strutta__dati_8h.html#a669918f54dab8982e88cc3c15a03d9d3" title="dimensione massima delle stringhe">DIM_STRINGHE</a>];
+                strcpy(nome,tavola[punta_turni-&gt;<a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4" title="variabile che mi stabilisce su quale carta un certo giocatore si trova è l&#39;elemento di unione tra la ...">posizione_nelle_carte</a>].<a class="code" href="structcarta__t.html#a4900c3bc5f551c9d4983509d620be2e9">prop</a>-&gt;<a class="code" href="structgiocatore__t.html#ab5545bf977dd406e5e1c0686b602141c">nome</a>);
+                <span class="keywordflow">if</span>(strcmp(nome,punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#ab5545bf977dd406e5e1c0686b602141c">nome</a>)==0)
+                        <span class="keywordflow">return</span> <span class="keyword">false</span>;
+                <span class="keywordflow">else</span>
+                {
+                        <span class="keywordflow">if</span>(tavola[punta_turni-&gt;<a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4" title="variabile che mi stabilisce su quale carta un certo giocatore si trova è l&#39;elemento di unione tra la ...">posizione_nelle_carte</a>].<a class="code" href="structcarta__t.html#aabc77ee3a44b6abd8821e050110967fc">num_azioni</a>!=0)
+                        {
+                                affitto+=tavola[punta_turni-&gt;<a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4" title="variabile che mi stabilisce su quale carta un certo giocatore si trova è l&#39;elemento di unione tra la ...">posizione_nelle_carte</a>].<a class="code" href="structcarta__t.html#aabc77ee3a44b6abd8821e050110967fc">num_azioni</a>*
+                                                tavola[punta_turni-&gt;<a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4" title="variabile che mi stabilisce su quale carta un certo giocatore si trova è l&#39;elemento di unione tra la ...">posizione_nelle_carte</a>].<a class="code" href="structcarta__t.html#a4962906c2592c2f4844270aed03e7d9b">val_azioni</a>;  
+                                cout&lt;&lt;<span class="stringliteral">&quot;affitto con azioni: &quot;</span>&lt;&lt;affitto&lt;&lt;endl;
+                        }
+                }       
+        }
+        punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>-=affitto;
+        tavola[punta_turni-&gt;<a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4" title="variabile che mi stabilisce su quale carta un certo giocatore si trova è l&#39;elemento di unione tra la ...">posizione_nelle_carte</a>].<a class="code" href="structcarta__t.html#a4900c3bc5f551c9d4983509d620be2e9">prop</a>-&gt;<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>+=affitto;
+        costo_affitto=affitto;
+        <span class="keywordflow">return</span> <span class="keyword">true</span>;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a7ec3287e3a97b930fa5bf24552afa324"></a><!-- doxytag: member="manip.cpp::seleziona_personaggio_movimento" ref="a7ec3287e3a97b930fa5bf24552afa324" args="(turno_t *app, int val, bool scelta_pers_active)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="manip_8h.html#a7ec3287e3a97b930fa5bf24552afa324">seleziona_personaggio_movimento</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structturno__t.html">turno_t</a> *&#160;</td>
+          <td class="paramname"><em>app</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>scelta_pers_active</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>funzione utilizzata da::carica_partita per andare a scegliere a quale personaggio o movimento corrispondesse un certo valore riportato nel file di salvataggio </p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordflow">switch</span>(val)
+        {
+                <span class="keywordflow">case</span> 0:
+                        <span class="keywordflow">if</span>(scelta_pers_active)
+                                app-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a1a28dc9f950ff418dc3d69434e0a5312">pers</a>=<a class="code" href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6edaf1ce01387d2348f8b858721a7db81670">S</a>;
+                        <span class="keywordflow">else</span>
+                                app-&gt;<a class="code" href="structturno__t.html#a326ce226c3caea11b5c503f13ad566f9">move</a>=<a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1a898fd7abd6aae10a03fc8f61543e1ab6">SX</a>;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 1:
+                        <span class="keywordflow">if</span>(scelta_pers_active)
+                                app-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a1a28dc9f950ff418dc3d69434e0a5312">pers</a>=<a class="code" href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6edaef31cc6fe9479955961311ee18ac205f">L</a>;
+                        <span class="keywordflow">else</span>
+                                app-&gt;<a class="code" href="structturno__t.html#a326ce226c3caea11b5c503f13ad566f9">move</a>=<a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1aba595d8bca8bc5e67c37c0a9d89becfa">UP</a>;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 2:
+                        <span class="keywordflow">if</span>(scelta_pers_active)
+                                app-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a1a28dc9f950ff418dc3d69434e0a5312">pers</a>=<a class="code" href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6eda3f2a77ecd272aa6d6b5902faa5e5fc68">B</a>;
+                        <span class="keywordflow">else</span>
+                                app-&gt;<a class="code" href="structturno__t.html#a326ce226c3caea11b5c503f13ad566f9">move</a>=<a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1a22dc95a35fbd833d9908928812979156">DX</a>;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 3:
+                        <span class="keywordflow">if</span>(scelta_pers_active)
+                                app-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a1a28dc9f950ff418dc3d69434e0a5312">pers</a>=<a class="code" href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6eda51ca6c63d97347ee58cc7da59ab6994b">M</a>;
+                        <span class="keywordflow">else</span>
+                                app-&gt;<a class="code" href="structturno__t.html#a326ce226c3caea11b5c503f13ad566f9">move</a>=<a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1abfea6036e64d9c7c773d277a57d2f959">DO</a>;
+                        <span class="keywordflow">break</span>;
+        }
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="af063e16f2f200e50113fcc4cc8821de4"></a><!-- doxytag: member="manip.cpp::stampa" ref="af063e16f2f200e50113fcc4cc8821de4" args="(carta_t tavola[], int i)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="manip_8h.html#af063e16f2f200e50113fcc4cc8821de4">stampa</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcarta__t.html">carta_t</a>&#160;</td>
+          <td class="paramname"><em>tavola</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funzione "di debugging" che permette di stampa l'intero array delle carte. </p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0;j&lt;i;j++)
+                cout&lt;&lt;tavola[j].nome_carta&lt;&lt;endl;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a39490d45dbd0caa54d671203f07e1a78"></a><!-- doxytag: member="manip.cpp::stampa_turni" ref="a39490d45dbd0caa54d671203f07e1a78" args="(turni testa)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="manip_8h.html#a39490d45dbd0caa54d671203f07e1a78">stampa_turni</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="strutta__dati_8h.html#a13a018e45fed07d44eea183f0b945d4f">turni</a>&#160;</td>
+          <td class="paramname"><em>testa</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funzione "di Debugging" che permette di stampare l'intera lista dei turni. </p>
+<div class="fragment"><pre class="fragment">{
+        <a class="code" href="structturno__t.html" title="Struttura dati che rappresenta un turno all&#39;interno del quale si trovano il nome del giocatore di che...">turno_t</a>* curr=testa;
+        <span class="keywordflow">if</span>(testa==NULL)
+                cout&lt;&lt;<span class="stringliteral">&quot;lista vuota&quot;</span>&lt;&lt;endl;
+        <span class="keywordflow">else</span>
+        {
+                <span class="keywordflow">do</span>
+                {
+                        cout&lt;&lt;<span class="stringliteral">&quot;identificatore: &quot;</span>&lt;&lt;curr-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#ab5545bf977dd406e5e1c0686b602141c">nome</a>&lt;&lt;endl;
+                        curr=curr-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a>;
+                }
+                <span class="keywordflow">while</span>(curr!=testa);
+        }
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a58a5452a4f98b1f91c457c8711c67d66"></a><!-- doxytag: member="manip.cpp::svuota_azioni_stesso_colore" ref="a58a5452a4f98b1f91c457c8711c67d66" args="(carta_t tavola[], int indice)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="manip_8h.html#a58a5452a4f98b1f91c457c8711c67d66">svuota_azioni_stesso_colore</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcarta__t.html">carta_t</a>&#160;</td>
+          <td class="paramname"><em>tavola</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indice</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;<a class="code" href="strutta__dati_8h.html#ad43f8c91bcd12ba9c244c810b7933c0a" title="massimo numero di carte presenti nel gioco">MAX_BOARD</a>;i++)
+                <span class="keywordflow">if</span>(tavola[i].colore==tavola[indice].colore)
+                        tavola[i].<a class="code" href="structcarta__t.html#aabc77ee3a44b6abd8821e050110967fc">num_azioni</a>=0;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="aa68fd72a8ba982beecef16de1319006e"></a><!-- doxytag: member="manip.cpp::ultimo_turno" ref="aa68fd72a8ba982beecef16de1319006e" args="(turni testa)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structturno__t.html">turno_t</a>* <a class="el" href="manip_8h.html#aa68fd72a8ba982beecef16de1319006e">ultimo_turno</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="strutta__dati_8h.html#a13a018e45fed07d44eea183f0b945d4f">turni</a>&#160;</td>
+          <td class="paramname"><em>testa</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Questa funzione ritorna il puntatore all'ultimo elemento della lista dei turni. </p>
+<div class="fragment"><pre class="fragment">{
+    <a class="code" href="structturno__t.html" title="Struttura dati che rappresenta un turno all&#39;interno del quale si trovano il nome del giocatore di che...">turno_t</a>* pp = testa;
+    <a class="code" href="structturno__t.html" title="Struttura dati che rappresenta un turno all&#39;interno del quale si trovano il nome del giocatore di che...">turno_t</a>* prec = testa-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a>;
+    <span class="keywordflow">while</span>( prec-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a> != pp )
+    {
+                prec = prec-&gt;<a class="code" href="structturno__t.html#a4602be8011af61e9fab3ddd123406c17">pross</a>;
+    }
+    <span class="keywordflow">return</span> prec;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a5978a28c40383af89c24f7c9548d1f68"></a><!-- doxytag: member="manip.cpp::vendi_carta" ref="a5978a28c40383af89c24f7c9548d1f68" args="(turno_t *punta_turni, carta_t tavola[], const char *nome, int &amp;indice)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="manip_8h.html#a5978a28c40383af89c24f7c9548d1f68">vendi_carta</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structturno__t.html">turno_t</a> *&#160;</td>
+          <td class="paramname"><em>punta_turni</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcarta__t.html">carta_t</a>&#160;</td>
+          <td class="paramname"><em>tavola</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>nome</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>indice</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>vende una determinata carta scelta dalla combo box e ne azzera i parametri </p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordtype">int</span> i;
+        <span class="keywordflow">for</span>(i=0;i&lt;<a class="code" href="strutta__dati_8h.html#ad43f8c91bcd12ba9c244c810b7933c0a" title="massimo numero di carte presenti nel gioco">MAX_BOARD</a>;i++)
+                <span class="keywordflow">if</span>(strcmp(tavola[i].nome_carta,nome)==0)
+                {
+                        <span class="keywordflow">break</span>;
+                }
+        <span class="keywordflow">if</span>(i==MAX_BOARD)
+        {
+                <span class="keywordflow">return</span> <span class="keyword">false</span>;
+        }
+        tavola[i].<a class="code" href="structcarta__t.html#a4900c3bc5f551c9d4983509d620be2e9">prop</a>=NULL;
+        
+        tavola[i].<a class="code" href="structcarta__t.html#aabc77ee3a44b6abd8821e050110967fc">num_azioni</a>=0;
+        
+        punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>+=tavola[i].<a class="code" href="structcarta__t.html#adee500680ef369bb67e84279b0979aed">valore_ipoteca</a>;
+        
+        punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a5bb2d982a9ea44e28636477c57feac0e">conta_propr</a>--;
+        
+        indice=i;
+        
+        <span class="keywordflow">return</span> <span class="keyword">true</span>;
+
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a64c974f204adf30db0008dbd43e948b2"></a><!-- doxytag: member="manip.cpp::vendi_tutto" ref="a64c974f204adf30db0008dbd43e948b2" args="(carta_t tavola[], turno_t *punta_turni)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="manip_8h.html#a64c974f204adf30db0008dbd43e948b2">vendi_tutto</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcarta__t.html">carta_t</a>&#160;</td>
+          <td class="paramname"><em>tavola</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structturno__t.html">turno_t</a> *&#160;</td>
+          <td class="paramname"><em>punta_turni</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>svuota tutte le proprietà di un certo giocatore che decide o è costretto a dichiarare fallimento utilizzata dal segnale <a class="el" href="mono__main_8cpp.html#a636d53fb578a95c7e1500c2272b3d7c0" title="Segnale associato al pulsante dichiara fallimento che permette comunica la propria sconfitta o il pro...">handler_dichiara_fallimento</a> </p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;<a class="code" href="strutta__dati_8h.html#ad43f8c91bcd12ba9c244c810b7933c0a" title="massimo numero di carte presenti nel gioco">MAX_BOARD</a>;i++)
+                <span class="keywordflow">if</span>(tavola[i].prop!=NULL &amp;&amp; strcmp(tavola[i].prop-&gt;nome,punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#ab5545bf977dd406e5e1c0686b602141c">nome</a>)==0)
+                                        tavola[i].<a class="code" href="structcarta__t.html#a4900c3bc5f551c9d4983509d620be2e9">prop</a>=NULL;
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a0ddad1f35a7baeaa168770202667dbb5"></a><!-- doxytag: member="manip.cpp::verifica_fallimento" ref="a0ddad1f35a7baeaa168770202667dbb5" args="(int valore_residuo, int conta_prop)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="manip_8h.html#a8a8f7bf066360f8a7bd01cccd0c7ad8d">verifica_fallimento</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>valore_residuo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>conta_prop</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>verifica che un certo giocatore in un determinato momento si ancora in graado di continuare la partita </p>
+<div class="fragment"><pre class="fragment">{
+        <span class="keywordflow">if</span>(valore_residuo&lt;=0 &amp;&amp; conta_prop==0)
+                <span class="keywordflow">return</span> <span class="keyword">true</span>;
+        <span class="keywordflow">else</span>
+                <span class="keywordflow">return</span> <span class="keyword">false</span>;
+}
+</pre></div>
+</div>
+</div>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tutto</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classi</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>File</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funzioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variabili</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Ridefinizioni di tipo (typedef)</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Tipi enumerati (enum)</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valori del tipo enumerato</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Definizioni</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generato Ven 7 Giu 2013 13:30:38 per Social media Monopoly da &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

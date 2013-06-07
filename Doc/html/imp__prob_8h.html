@@ -1,0 +1,356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Social media Monopoly: Riferimenti per il file imp_prob.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Social media Monopoly
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Generato da Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li><a href="annotated.html"><span>Classi</span></a></li>
+      <li class="current"><a href="files.html"><span>File</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Elenco&#160;dei&#160;file</span></a></li>
+      <li><a href="globals.html"><span>Elementi&#160;dei&#160;file</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funzioni</a>  </div>
+  <div class="headertitle">
+<div class="title">Riferimenti per il file imp_prob.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br/>
+<code>#include &lt;cstring&gt;</code><br/>
+<code>#include &lt;gtk/gtk.h&gt;</code><br/>
+<code>#include &lt;cstdlib&gt;</code><br/>
+<code>#include &lt;ctime&gt;</code><br/>
+</div>
+<p><a href="imp__prob_8h_source.html">Vai al codice sorgente di questo file.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Funzioni</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imp__prob_8h.html#a2e7a22c47e516f26e94766025518ea80">gestione_imprevisti_probabilita</a> (<a class="el" href="structturno__t.html">turno_t</a> *&amp;<a class="el" href="mono__main_8cpp.html#ab1d7738acc116343f76e7010f1721a8e">punta_turni</a>, <a class="el" href="structcarta__t.html">carta_t</a> <a class="el" href="mono__main_8cpp.html#acfee36e499475b8e57d156c364e4c84a">tavola</a>[], const char *nome_carta)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Funzione di gestione degli imprevisti e probabilità decide cosa scegliere in base alla carta su cui il giocatore si trova.  <a href="#a2e7a22c47e516f26e94766025518ea80"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imp__prob_8h.html#a5e76ad8cf2870b301f7d50bf12cea0b7">seleziona_imprevisti</a> (GtkLabel *label, <a class="el" href="structturno__t.html">turno_t</a> *&amp;<a class="el" href="mono__main_8cpp.html#ab1d7738acc116343f76e7010f1721a8e">punta_turni</a>, <a class="el" href="structcarta__t.html">carta_t</a> <a class="el" href="mono__main_8cpp.html#acfee36e499475b8e57d156c364e4c84a">tavola</a>[])</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">seleziona in maniera pseudocasuale un imprevisto e modifica i parametri del giocatore o la posizione in base a quello che l'imprevisto prevede  <a href="#a5e76ad8cf2870b301f7d50bf12cea0b7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imp__prob_8h.html#a10337da421378e2b1461a118ee8e3a43">seleziona_probabilita</a> (GtkLabel *label, <a class="el" href="structturno__t.html">turno_t</a> *&amp;<a class="el" href="mono__main_8cpp.html#ab1d7738acc116343f76e7010f1721a8e">punta_turni</a>, <a class="el" href="structcarta__t.html">carta_t</a> <a class="el" href="mono__main_8cpp.html#acfee36e499475b8e57d156c364e4c84a">tavola</a>[])</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Seleziona la carta probabilità in maniera randomizzata e setta i vari attributi del giocatore o eventualmente la posizione delle pedine.  <a href="#a10337da421378e2b1461a118ee8e3a43"></a><br/></td></tr>
+</table>
+<hr/><h2>Documentazione delle funzioni</h2>
+<a class="anchor" id="a2e7a22c47e516f26e94766025518ea80"></a><!-- doxytag: member="imp_prob.h::gestione_imprevisti_probabilita" ref="a2e7a22c47e516f26e94766025518ea80" args="(turno_t *&amp;punta_turni, carta_t tavola[], const char *nome_carta)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="imp__prob_8h.html#a2e7a22c47e516f26e94766025518ea80">gestione_imprevisti_probabilita</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structturno__t.html">turno_t</a> *&amp;&#160;</td>
+          <td class="paramname"><em>punta_turni</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcarta__t.html">carta_t</a>&#160;</td>
+          <td class="paramname"><em>tavola</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>nome_carta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Funzione di gestione degli imprevisti e probabilità decide cosa scegliere in base alla carta su cui il giocatore si trova. </p>
+<div class="fragment"><pre class="fragment">{
+        GtkWidget *ins_dialog=GTK_WIDGET(gtk_builder_get_object(<a class="code" href="imp__prob_8cpp.html#afa501dbb63ae6077ac8db76b560de42b" title="Creazione dell&#39;oggetto builder che permette di interaggire con la GUI.">builder</a>,<span class="stringliteral">&quot;messaggi&quot;</span>));
+        GtkLabel *label=GTK_LABEL(gtk_builder_get_object(<a class="code" href="imp__prob_8cpp.html#afa501dbb63ae6077ac8db76b560de42b" title="Creazione dell&#39;oggetto builder che permette di interaggire con la GUI.">builder</a>,<span class="stringliteral">&quot;label_mes&quot;</span>));
+        
+        <span class="keywordflow">if</span>(strcmp(nome_carta,<span class="stringliteral">&quot;imprevisti&quot;</span>)==0)
+                <a class="code" href="imp__prob_8cpp.html#a5e76ad8cf2870b301f7d50bf12cea0b7" title="seleziona in maniera pseudocasuale un imprevisto e modifica i parametri del giocatore o la posizione ...">seleziona_imprevisti</a>(label,punta_turni,tavola);
+                
+                
+        <span class="keywordflow">if</span>(strcmp(nome_carta,<span class="stringliteral">&quot;probabilita&quot;</span>)==0)
+                <a class="code" href="imp__prob_8cpp.html#a10337da421378e2b1461a118ee8e3a43" title="Seleziona la carta probabilità in maniera randomizzata e setta i vari attributi del giocatore o event...">seleziona_probabilita</a>(label,punta_turni,tavola);        
+                
+        gtk_widget_show_all(ins_dialog);
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a5e76ad8cf2870b301f7d50bf12cea0b7"></a><!-- doxytag: member="imp_prob.h::seleziona_imprevisti" ref="a5e76ad8cf2870b301f7d50bf12cea0b7" args="(GtkLabel *label, turno_t *&amp;punta_turni, carta_t tavola[])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="imp__prob_8h.html#a5e76ad8cf2870b301f7d50bf12cea0b7">seleziona_imprevisti</a> </td>
+          <td>(</td>
+          <td class="paramtype">GtkLabel *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structturno__t.html">turno_t</a> *&amp;&#160;</td>
+          <td class="paramname"><em>punta_turni</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcarta__t.html">carta_t</a>&#160;</td>
+          <td class="paramname"><em>tavola</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>seleziona in maniera pseudocasuale un imprevisto e modifica i parametri del giocatore o la posizione in base a quello che l'imprevisto prevede </p>
+<div class="fragment"><pre class="fragment">{
+        srand(time(0));
+        <span class="keywordtype">int</span> selezione=rand()%10+1;
+        <span class="keywordtype">char</span> messaggio[<a class="code" href="strutta__dati_8h.html#a989e38486ed69cc55a3b417054ae5b3c" title="massima dimensione di una stringa per i messaggi all&#39;utente">DIM_MESSAGGIO</a>];
+        <span class="keywordflow">switch</span>(selezione)       
+        {
+                <span class="keywordflow">case</span> 1:
+                        strcpy(messaggio,<span class="stringliteral">&quot;Sei stato condannato per evasione fiscale! paga 3000 di multa e vai in galera&quot;</span>);
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>-=3000;
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a95196c96b48b65663cac7c21e0fe91ca">coord_x</a>=15;
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a947c18dac8b4f4e8c9c982fe13ef9209">coord_y</a>=450;
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a4d6e0cf716e9d00ef91937209d8e03c8">prigione</a>=<span class="keyword">true</span>;
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a326ce226c3caea11b5c503f13ad566f9">move</a>=<a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1a898fd7abd6aae10a03fc8f61543e1ab6">SX</a>;
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4" title="variabile che mi stabilisce su quale carta un certo giocatore si trova è l&#39;elemento di unione tra la ...">posizione_nelle_carte</a>=10;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 2:
+                        strcpy(messaggio,<span class="stringliteral">&quot;HAHAHAH! La tua pagina di facebook è stata chiusa paga 200&quot;</span>);
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>-=200;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 3:
+                        strcpy(messaggio,<span class="stringliteral">&quot;OHH NOOOO!!! I server della tua azienda si sono bloccati paga 1000 per spese di riparazione&quot;</span>);
+                        
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>-=1000;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 4:
+                        strcpy(messaggio,<span class="stringliteral">&quot;Le serate la Las Vegas non sono mai redditizie hai perso 1000&quot;</span>);
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>-=1000;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 5:
+                        strcpy(messaggio,<span class="stringliteral">&quot;Mi dispiace il tuo canale YOUTUBE è stato chiuso perdi 150&quot;</span>);
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>-=150;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 6:
+                        strcpy(messaggio,<span class="stringliteral">&quot;Lo sapevi che sposarti non ti avrebbe portato niente di buono paga 550 di alimenti a tua moglie&quot;</span>);
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>-=550;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 7:
+                        strcpy(messaggio,<span class="stringliteral">&quot;Linus Torvalds ti ha denunciato per avergli mandato codice non testato a dovere! PAGA 2000!&quot;</span>);
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>-=2000;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 8:
+                        strcpy(messaggio,<span class="stringliteral">&quot;Bella partita a poker ieri sera!! Guadagni 1000!&quot;</span>);
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>+=1000;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 9:
+                        strcpy(messaggio,<span class="stringliteral">&quot;Il CdA richiede un nuovo investimento di capitale! paga 500&quot;</span>);
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>-=500;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 10:
+                        strcpy(messaggio,<span class="stringliteral">&quot;Ops! Sei stato rapinato, hai perso 200&quot;</span>);
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>-=200;
+                        <span class="keywordflow">break</span>;
+        }
+        gtk_label_set_text(label,messaggio);
+}
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a10337da421378e2b1461a118ee8e3a43"></a><!-- doxytag: member="imp_prob.h::seleziona_probabilita" ref="a10337da421378e2b1461a118ee8e3a43" args="(GtkLabel *label, turno_t *&amp;punta_turni, carta_t tavola[])" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="imp__prob_8h.html#a10337da421378e2b1461a118ee8e3a43">seleziona_probabilita</a> </td>
+          <td>(</td>
+          <td class="paramtype">GtkLabel *&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structturno__t.html">turno_t</a> *&amp;&#160;</td>
+          <td class="paramname"><em>punta_turni</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcarta__t.html">carta_t</a>&#160;</td>
+          <td class="paramname"><em>tavola</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Seleziona la carta probabilità in maniera randomizzata e setta i vari attributi del giocatore o eventualmente la posizione delle pedine. </p>
+<div class="fragment"><pre class="fragment">{
+        srand(time(0));
+        <span class="keywordtype">int</span> selezione=rand()%10+1;
+        <span class="keywordtype">char</span> messaggio[<a class="code" href="strutta__dati_8h.html#a989e38486ed69cc55a3b417054ae5b3c" title="massima dimensione di una stringa per i messaggi all&#39;utente">DIM_MESSAGGIO</a>];
+        <span class="keywordtype">int</span> somma_az=0;
+        <span class="keywordflow">switch</span>(selezione)
+        {
+                <span class="keywordflow">case</span> 1:
+                        strcpy(messaggio,<span class="stringliteral">&quot;Un nuovo prodotto esce sul mercato!! guadagni 700&quot;</span>);
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>+=700;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 2:
+                        strcpy(messaggio,<span class="stringliteral">&quot;Complimenti! hai vinto il premio turing! guadagni 500&quot;</span>);
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>+=500;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 3:
+                        strcpy(messaggio,<span class="stringliteral">&quot;Hai bisogno di nuove informazione sui tuoi avversari spostati fino a Wikipedia&quot;</span>);
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a14f0b707e59a33f4fc4051656e181cd4" title="variabile che mi stabilisce su quale carta un certo giocatore si trova è l&#39;elemento di unione tra la ...">posizione_nelle_carte</a>=20;
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a95196c96b48b65663cac7c21e0fe91ca">coord_x</a>=5;
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a947c18dac8b4f4e8c9c982fe13ef9209">coord_y</a>=25;
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a326ce226c3caea11b5c503f13ad566f9">move</a>=<a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1aba595d8bca8bc5e67c37c0a9d89becfa">UP</a>;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 4:
+                        strcpy(messaggio,<span class="stringliteral">&quot;Ummmmm! Oggi sei vestito particolarmente bene, guadagni 80&quot;</span>);
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>+=80;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 5:
+                        strcpy(messaggio,<span class="stringliteral">&quot;Hai raggiunto 200.000 iscritti su YOUTUBE guadagni 250&quot;</span>);
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>+=250;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 6:
+                        strcpy(messaggio,<span class="stringliteral">&quot;Tuo figlio finalmente si sposa, paga la dote di 600 &quot;</span>);
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>-=600;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 7:
+                        strcpy(messaggio,<span class="stringliteral">&quot;La pubblicità su Facebook da ottimi risultati guadagni 1000&quot;</span>);
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>+=1000;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 8:
+                        strcpy(messaggio,<span class="stringliteral">&quot;Il revisore contabile, scopre che hai truffato l&#39;azienda paga 10 per ogni azione&quot;</span>);
+                        
+                        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;<a class="code" href="strutta__dati_8h.html#ad43f8c91bcd12ba9c244c810b7933c0a" title="massimo numero di carte presenti nel gioco">MAX_BOARD</a>;i++)
+                                <span class="keywordflow">if</span>(tavola[i].prop==&amp;(punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>))
+                                        somma_az+=tavola[i].<a class="code" href="structcarta__t.html#aabc77ee3a44b6abd8821e050110967fc">num_azioni</a>;
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>-=somma_az*10;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 9:
+                        strcpy(messaggio,<span class="stringliteral">&quot;Fantastici utili a fine anno!! guadagni 2000&quot;</span>);
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>+=2000;
+                        <span class="keywordflow">break</span>;
+                <span class="keywordflow">case</span> 10:
+                        strcpy(messaggio,<span class="stringliteral">&quot;Niente da  fare perdi costantemente quote di mercato, perdi 1000&quot;</span>);
+                        punta_turni-&gt;<a class="code" href="structturno__t.html#a165e7fd4bdcf236cb50b82d4db8562a2">giocatore</a>.<a class="code" href="structgiocatore__t.html#a23abbbc7a5ed309402daa359565dc5af">valore_residuo</a>-=1000;
+                        <span class="keywordflow">break</span>;
+        }
+        gtk_label_set_text(label,messaggio);    
+}
+</pre></div>
+</div>
+</div>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tutto</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classi</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>File</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funzioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variabili</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Ridefinizioni di tipo (typedef)</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Tipi enumerati (enum)</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valori del tipo enumerato</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Definizioni</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generato Ven 7 Giu 2013 13:30:38 per Social media Monopoly da &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+var searchData=
+[
+  ['s',['S',['../strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6edaf1ce01387d2348f8b858721a7db81670',1,'strutta_dati.h']]],
+  ['salva_5fpartita',['salva_partita',['../fileIO_8cpp.html#a61b561b9f290209743c9fd477feca873',1,'salva_partita(turni testa, carta_t tavola[], int num_gc, turno_t *punta_turni):&#160;fileIO.cpp'],['../fileIO_8h.html#a61b561b9f290209743c9fd477feca873',1,'salva_partita(turni testa, carta_t tavola[], int num_gc, turno_t *punta_turni):&#160;fileIO.cpp']]],
+  ['sc',['SC',['../strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a9b691ca253b009f6c549a080f2442754',1,'strutta_dati.h']]],
+  ['seleziona_5fimprevisti',['seleziona_imprevisti',['../imp__prob_8cpp.html#a5e76ad8cf2870b301f7d50bf12cea0b7',1,'seleziona_imprevisti(GtkLabel *label, turno_t *&amp;punta_turni, carta_t tavola[]):&#160;imp_prob.cpp'],['../imp__prob_8h.html#a5e76ad8cf2870b301f7d50bf12cea0b7',1,'seleziona_imprevisti(GtkLabel *label, turno_t *&amp;punta_turni, carta_t tavola[]):&#160;imp_prob.cpp']]],
+  ['seleziona_5fpersonaggio_5fmovimento',['seleziona_personaggio_movimento',['../manip_8cpp.html#a7ec3287e3a97b930fa5bf24552afa324',1,'seleziona_personaggio_movimento(turno_t *app, int val, bool scelta_pers_active):&#160;manip.cpp'],['../manip_8h.html#a7ec3287e3a97b930fa5bf24552afa324',1,'seleziona_personaggio_movimento(turno_t *app, int val, bool scelta_pers_active):&#160;manip.cpp']]],
+  ['seleziona_5fprobabilita',['seleziona_probabilita',['../imp__prob_8cpp.html#a10337da421378e2b1461a118ee8e3a43',1,'seleziona_probabilita(GtkLabel *label, turno_t *&amp;punta_turni, carta_t tavola[]):&#160;imp_prob.cpp'],['../imp__prob_8h.html#a10337da421378e2b1461a118ee8e3a43',1,'seleziona_probabilita(GtkLabel *label, turno_t *&amp;punta_turni, carta_t tavola[]):&#160;imp_prob.cpp']]],
+  ['stampa',['stampa',['../manip_8cpp.html#af063e16f2f200e50113fcc4cc8821de4',1,'stampa(carta_t tavola[], int i):&#160;manip.cpp'],['../manip_8h.html#af063e16f2f200e50113fcc4cc8821de4',1,'stampa(carta_t tavola[], int i):&#160;manip.cpp']]],
+  ['stampa_5fturni',['stampa_turni',['../manip_8cpp.html#a39490d45dbd0caa54d671203f07e1a78',1,'stampa_turni(turni testa):&#160;manip.cpp'],['../manip_8h.html#a39490d45dbd0caa54d671203f07e1a78',1,'stampa_turni(turni testa):&#160;manip.cpp']]],
+  ['strutta_5fdati_2eh',['strutta_dati.h',['../strutta__dati_8h.html',1,'']]],
+  ['svuota_5fazioni_5fstesso_5fcolore',['svuota_azioni_stesso_colore',['../manip_8cpp.html#a58a5452a4f98b1f91c457c8711c67d66',1,'svuota_azioni_stesso_colore(carta_t tavola[], int indice):&#160;manip.cpp'],['../manip_8h.html#a58a5452a4f98b1f91c457c8711c67d66',1,'svuota_azioni_stesso_colore(carta_t tavola[], int indice):&#160;manip.cpp']]],
+  ['sx',['SX',['../strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1a898fd7abd6aae10a03fc8f61543e1ab6',1,'strutta_dati.h']]]
+];

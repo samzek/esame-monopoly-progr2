@@ -1,0 +1,543 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Social media Monopoly: Riferimenti per il file strutta_dati.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Social media Monopoly
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Generato da Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li><a href="annotated.html"><span>Classi</span></a></li>
+      <li class="current"><a href="files.html"><span>File</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Elenco&#160;dei&#160;file</span></a></li>
+      <li><a href="globals.html"><span>Elementi&#160;dei&#160;file</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Composti</a> &#124;
+<a href="#define-members">Definizioni</a> &#124;
+<a href="#typedef-members">Ridefinizioni di tipo (typedef)</a> &#124;
+<a href="#enum-members">Tipi enumerati (enum)</a> &#124;
+<a href="#var-members">Variabili</a>  </div>
+  <div class="headertitle">
+<div class="title">Riferimenti per il file strutta_dati.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br/>
+<code>#include &lt;fstream&gt;</code><br/>
+<code>#include &lt;cassert&gt;</code><br/>
+</div>
+<p><a href="strutta__dati_8h_source.html">Vai al codice sorgente di questo file.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Composti</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgiocatore__t.html">giocatore_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">struttura dati che rappresenta il singolo giocatore con tutte le caratteristiche ad esso connesse quali il nome, il valore_residuo il numero di proprietà, il fatto che si trova in prigione o meno e il personaggio da lui scelto per giocare  <a href="structgiocatore__t.html#details">Continua...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcarta__t.html">carta_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">struttura dati che mi rappresenta una carta con tutte la carattestiche ad essa connesse.  <a href="structcarta__t.html#details">Continua...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structturno__t.html">turno_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Struttura dati che rappresenta un turno all'interno del quale si trovano il nome del giocatore di che sta giocando in un determinato turno la sua posizione nella carte, quindi su che carta si trova, le coordinate x,y che mi indicano la posizione in pixel sulla mappa del giocatore struttura dati implementata tramite lista circolare semplice che conterrà un numero di elementi pari al numero di giocatori.  <a href="structturno__t.html#details">Continua...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="define-members"></a>
+Definizioni</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strutta__dati_8h.html#a8de3ed741dadc9c979a4ff17c0a9116e">NDEBUG</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strutta__dati_8h.html#a9fd176efd6d22cb809550f0271c2a93d">DBG</a>(A, <a class="el" href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6eda3f2a77ecd272aa6d6b5902faa5e5fc68">B</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strutta__dati_8h.html#a63551094f000f640a91832ab092d72e6">D0</a>(a)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strutta__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(a)&#160;&#160;&#160;<a class="el" href="strutta__dati_8h.html#a9fd176efd6d22cb809550f0271c2a93d">DBG</a>(1, a)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strutta__dati_8h.html#a975397c373ae2a9dc28d0297fa18da56">D2</a>(a)&#160;&#160;&#160;<a class="el" href="strutta__dati_8h.html#a9fd176efd6d22cb809550f0271c2a93d">DBG</a>(2, a)</td></tr>
+<tr><td colspan="2"><h2><a name="typedef-members"></a>
+Ridefinizioni di tipo (typedef)</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structturno__t.html">turno_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strutta__dati_8h.html#a13a018e45fed07d44eea183f0b945d4f">turni</a></td></tr>
+<tr><td colspan="2"><h2><a name="enum-members"></a>
+Tipi enumerati (enum)</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6ed">personaggio_t</a> { <a class="el" href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6edaf1ce01387d2348f8b858721a7db81670">S</a>, 
+<a class="el" href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6edaef31cc6fe9479955961311ee18ac205f">L</a>, 
+<a class="el" href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6eda3f2a77ecd272aa6d6b5902faa5e5fc68">B</a>, 
+<a class="el" href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6eda51ca6c63d97347ee58cc7da59ab6994b">M</a>
+ }</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">enumerato che rappresenta i possibili personaggi utilizzabili nel gioco  <a href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6ed">Continua...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8">colore_t</a> { <br/>
+&#160;&#160;<a class="el" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a28f41f1144eee94834387e9a6a088bc1">V</a>, 
+<a class="el" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a0aa3e60ba1c575f32d00afb3918a63ee">AZ</a>, 
+<a class="el" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a42e9aa764b9ee7ecf7e668462de6f96d">RO</a>, 
+<a class="el" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8aaa54e8220a1a7dbfd4cf3843b1b04422">AR</a>, 
+<br/>
+&#160;&#160;<a class="el" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8ae76f903aeec6992ab7a1a681402724b1">ROS</a>, 
+<a class="el" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a2fe993340f6abb2234e543cd427df70b">G</a>, 
+<a class="el" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a6f5573fd06b8a8917889f3820575a09d">VE</a>, 
+<a class="el" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8af603e0d046225e81459ffe6d8ee5ba6b">BL</a>, 
+<br/>
+&#160;&#160;<a class="el" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a9b691ca253b009f6c549a080f2442754">SC</a>, 
+<a class="el" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a3dbd1016ea99d087d747530418b89a01">NC</a>
+<br/>
+ }</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">enumerato che rappresenta il colore di ogni carta nello specifico i valari finali stanno: SC: senza colore (insieme di carte che sono acquistabili ma che non hanno colore) NC: non comprabili insieme di carte quali la prigione o lo start che non sono acquistabili e non hanno colore gli altri sono i colori relativi ad ogni carta presenti sulla tavola da gioco  <a href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8">Continua...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1">movimento_t</a> { <a class="el" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1a898fd7abd6aae10a03fc8f61543e1ab6">SX</a>, 
+<a class="el" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1aba595d8bca8bc5e67c37c0a9d89becfa">UP</a>, 
+<a class="el" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1a22dc95a35fbd833d9908928812979156">DX</a>, 
+<a class="el" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1abfea6036e64d9c7c773d277a57d2f959">DO</a>
+ }</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">enumerato che stabilisce il movimento direzionale che una certa pedina deve seguire nel suo tragitto  <a href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1">Continua...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="var-members"></a>
+Variabili</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strutta__dati_8h.html#a669918f54dab8982e88cc3c15a03d9d3">DIM_STRINGHE</a> = 20</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">dimensione massima delle stringhe  <a href="#a669918f54dab8982e88cc3c15a03d9d3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strutta__dati_8h.html#abea96c5c88c5ab5a40e63a4f800ad89c">DENARO</a> = 10000</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">denaro di partenza del gioco  <a href="#abea96c5c88c5ab5a40e63a4f800ad89c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strutta__dati_8h.html#ad43f8c91bcd12ba9c244c810b7933c0a">MAX_BOARD</a> = 40</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">massimo numero di carte presenti nel gioco  <a href="#ad43f8c91bcd12ba9c244c810b7933c0a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strutta__dati_8h.html#a989e38486ed69cc55a3b417054ae5b3c">DIM_MESSAGGIO</a> = 100</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">massima dimensione di una stringa per i messaggi all'utente  <a href="#a989e38486ed69cc55a3b417054ae5b3c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strutta__dati_8h.html#a64b4127eab65af02324d9deb906ac125">PIXEL_CARTA</a> = 41</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">grandezza un pixel di una carta sulla mappa utile per gestire i movimenti delle pedine  <a href="#a64b4127eab65af02324d9deb906ac125"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strutta__dati_8h.html#a18f3b76839e1b24b872ec84ef9b783ed">LIMITE_SX_PX</a> = 15</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">limite sinistro per la pedina in pixel  <a href="#a18f3b76839e1b24b872ec84ef9b783ed"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strutta__dati_8h.html#a4a84892ac2d2b7b12394b6ce11f098c2">LIMITE_UP_PX</a> = 25</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">limite superiore per la pedina in pixel  <a href="#a4a84892ac2d2b7b12394b6ce11f098c2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strutta__dati_8h.html#a2e77c529a369c47c0eb367f797919cc0">LIMITE_DX_PX</a> = 425</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">limite destro per la pedina in pixel  <a href="#a2e77c529a369c47c0eb367f797919cc0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strutta__dati_8h.html#a109d000c036a060c6dcc60762ef27eef">LIMITE_DO_PX</a> = 450</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">limite inferiore per la pedina in pixel  <a href="#a109d000c036a060c6dcc60762ef27eef"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strutta__dati_8h.html#a09233e19648809f424f7a4078fbbb05a">DIM_STR_FILE</a> = 20</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">descrive la lunghezza massima della stringa contenente il nome del file dalla foto di ogni carta  <a href="#a09233e19648809f424f7a4078fbbb05a"></a><br/></td></tr>
+</table>
+<hr/><h2>Documentazione delle definizioni</h2>
+<a class="anchor" id="a63551094f000f640a91832ab092d72e6"></a><!-- doxytag: member="strutta_dati.h::D0" ref="a63551094f000f640a91832ab092d72e6" args="(a)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="strutta__dati_8h.html#a63551094f000f640a91832ab092d72e6">D0</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a330bea9b36f638349fec0d06c8ab4c38"></a><!-- doxytag: member="strutta_dati.h::D1" ref="a330bea9b36f638349fec0d06c8ab4c38" args="(a)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="strutta__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="strutta__dati_8h.html#a9fd176efd6d22cb809550f0271c2a93d">DBG</a>(1, a)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a975397c373ae2a9dc28d0297fa18da56"></a><!-- doxytag: member="strutta_dati.h::D2" ref="a975397c373ae2a9dc28d0297fa18da56" args="(a)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="strutta__dati_8h.html#a975397c373ae2a9dc28d0297fa18da56">D2</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="strutta__dati_8h.html#a9fd176efd6d22cb809550f0271c2a93d">DBG</a>(2, a)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9fd176efd6d22cb809550f0271c2a93d"></a><!-- doxytag: member="strutta_dati.h::DBG" ref="a9fd176efd6d22cb809550f0271c2a93d" args="(A, B)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="strutta__dati_8h.html#a9fd176efd6d22cb809550f0271c2a93d">DBG</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">A, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6eda3f2a77ecd272aa6d6b5902faa5e5fc68">B</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8de3ed741dadc9c979a4ff17c0a9116e"></a><!-- doxytag: member="strutta_dati.h::NDEBUG" ref="a8de3ed741dadc9c979a4ff17c0a9116e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="strutta__dati_8h.html#a8de3ed741dadc9c979a4ff17c0a9116e">NDEBUG</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Documentazione delle ridefinizioni di tipo (typedef)</h2>
+<a class="anchor" id="a13a018e45fed07d44eea183f0b945d4f"></a><!-- doxytag: member="strutta_dati.h::turni" ref="a13a018e45fed07d44eea183f0b945d4f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structturno__t.html">turno_t</a>* <a class="el" href="strutta__dati_8h.html#a13a018e45fed07d44eea183f0b945d4f">turni</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Documentazione dei tipi enumerati</h2>
+<a class="anchor" id="afe13424a6e8bc9b5ab4e4a5676e087a8"></a><!-- doxytag: member="strutta_dati.h::colore_t" ref="afe13424a6e8bc9b5ab4e4a5676e087a8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8">colore_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>enumerato che rappresenta il colore di ogni carta nello specifico i valari finali stanno: SC: senza colore (insieme di carte che sono acquistabili ma che non hanno colore) NC: non comprabili insieme di carte quali la prigione o lo start che non sono acquistabili e non hanno colore gli altri sono i colori relativi ad ogni carta presenti sulla tavola da gioco </p>
+<dl><dt><b>Valori del tipo enumerato: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="afe13424a6e8bc9b5ab4e4a5676e087a8a28f41f1144eee94834387e9a6a088bc1"></a><!-- doxytag: member="V" ref="afe13424a6e8bc9b5ab4e4a5676e087a8a28f41f1144eee94834387e9a6a088bc1" args="" -->V</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afe13424a6e8bc9b5ab4e4a5676e087a8a0aa3e60ba1c575f32d00afb3918a63ee"></a><!-- doxytag: member="AZ" ref="afe13424a6e8bc9b5ab4e4a5676e087a8a0aa3e60ba1c575f32d00afb3918a63ee" args="" -->AZ</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afe13424a6e8bc9b5ab4e4a5676e087a8a42e9aa764b9ee7ecf7e668462de6f96d"></a><!-- doxytag: member="RO" ref="afe13424a6e8bc9b5ab4e4a5676e087a8a42e9aa764b9ee7ecf7e668462de6f96d" args="" -->RO</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afe13424a6e8bc9b5ab4e4a5676e087a8aaa54e8220a1a7dbfd4cf3843b1b04422"></a><!-- doxytag: member="AR" ref="afe13424a6e8bc9b5ab4e4a5676e087a8aaa54e8220a1a7dbfd4cf3843b1b04422" args="" -->AR</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afe13424a6e8bc9b5ab4e4a5676e087a8ae76f903aeec6992ab7a1a681402724b1"></a><!-- doxytag: member="ROS" ref="afe13424a6e8bc9b5ab4e4a5676e087a8ae76f903aeec6992ab7a1a681402724b1" args="" -->ROS</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afe13424a6e8bc9b5ab4e4a5676e087a8a2fe993340f6abb2234e543cd427df70b"></a><!-- doxytag: member="G" ref="afe13424a6e8bc9b5ab4e4a5676e087a8a2fe993340f6abb2234e543cd427df70b" args="" -->G</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afe13424a6e8bc9b5ab4e4a5676e087a8a6f5573fd06b8a8917889f3820575a09d"></a><!-- doxytag: member="VE" ref="afe13424a6e8bc9b5ab4e4a5676e087a8a6f5573fd06b8a8917889f3820575a09d" args="" -->VE</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afe13424a6e8bc9b5ab4e4a5676e087a8af603e0d046225e81459ffe6d8ee5ba6b"></a><!-- doxytag: member="BL" ref="afe13424a6e8bc9b5ab4e4a5676e087a8af603e0d046225e81459ffe6d8ee5ba6b" args="" -->BL</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afe13424a6e8bc9b5ab4e4a5676e087a8a9b691ca253b009f6c549a080f2442754"></a><!-- doxytag: member="SC" ref="afe13424a6e8bc9b5ab4e4a5676e087a8a9b691ca253b009f6c549a080f2442754" args="" -->SC</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="afe13424a6e8bc9b5ab4e4a5676e087a8a3dbd1016ea99d087d747530418b89a01"></a><!-- doxytag: member="NC" ref="afe13424a6e8bc9b5ab4e4a5676e087a8a3dbd1016ea99d087d747530418b89a01" args="" -->NC</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+<div class="fragment"><pre class="fragment">{<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a28f41f1144eee94834387e9a6a088bc1">V</a>,<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a0aa3e60ba1c575f32d00afb3918a63ee">AZ</a>,<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a42e9aa764b9ee7ecf7e668462de6f96d">RO</a>,<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8aaa54e8220a1a7dbfd4cf3843b1b04422">AR</a>,<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8ae76f903aeec6992ab7a1a681402724b1">ROS</a>,<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a2fe993340f6abb2234e543cd427df70b">G</a>,<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a6f5573fd06b8a8917889f3820575a09d">VE</a>,<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8af603e0d046225e81459ffe6d8ee5ba6b">BL</a>,<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a9b691ca253b009f6c549a080f2442754">SC</a>,<a class="code" href="strutta__dati_8h.html#afe13424a6e8bc9b5ab4e4a5676e087a8a3dbd1016ea99d087d747530418b89a01">NC</a>};
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="acabcc1602d06c0bebca9dfcc4a8b31b1"></a><!-- doxytag: member="strutta_dati.h::movimento_t" ref="acabcc1602d06c0bebca9dfcc4a8b31b1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1">movimento_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>enumerato che stabilisce il movimento direzionale che una certa pedina deve seguire nel suo tragitto </p>
+<dl><dt><b>Valori del tipo enumerato: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="acabcc1602d06c0bebca9dfcc4a8b31b1a898fd7abd6aae10a03fc8f61543e1ab6"></a><!-- doxytag: member="SX" ref="acabcc1602d06c0bebca9dfcc4a8b31b1a898fd7abd6aae10a03fc8f61543e1ab6" args="" -->SX</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="acabcc1602d06c0bebca9dfcc4a8b31b1aba595d8bca8bc5e67c37c0a9d89becfa"></a><!-- doxytag: member="UP" ref="acabcc1602d06c0bebca9dfcc4a8b31b1aba595d8bca8bc5e67c37c0a9d89becfa" args="" -->UP</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="acabcc1602d06c0bebca9dfcc4a8b31b1a22dc95a35fbd833d9908928812979156"></a><!-- doxytag: member="DX" ref="acabcc1602d06c0bebca9dfcc4a8b31b1a22dc95a35fbd833d9908928812979156" args="" -->DX</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="acabcc1602d06c0bebca9dfcc4a8b31b1abfea6036e64d9c7c773d277a57d2f959"></a><!-- doxytag: member="DO" ref="acabcc1602d06c0bebca9dfcc4a8b31b1abfea6036e64d9c7c773d277a57d2f959" args="" -->DO</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+<div class="fragment"><pre class="fragment">{<a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1a898fd7abd6aae10a03fc8f61543e1ab6">SX</a>,<a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1aba595d8bca8bc5e67c37c0a9d89becfa">UP</a>,<a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1a22dc95a35fbd833d9908928812979156">DX</a>,<a class="code" href="strutta__dati_8h.html#acabcc1602d06c0bebca9dfcc4a8b31b1abfea6036e64d9c7c773d277a57d2f959">DO</a>};
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="abf4830d0d09bb08e4eb86c00de95d6ed"></a><!-- doxytag: member="strutta_dati.h::personaggio_t" ref="abf4830d0d09bb08e4eb86c00de95d6ed" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6ed">personaggio_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>enumerato che rappresenta i possibili personaggi utilizzabili nel gioco </p>
+<dl><dt><b>Valori del tipo enumerato: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="abf4830d0d09bb08e4eb86c00de95d6edaf1ce01387d2348f8b858721a7db81670"></a><!-- doxytag: member="S" ref="abf4830d0d09bb08e4eb86c00de95d6edaf1ce01387d2348f8b858721a7db81670" args="" -->S</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="abf4830d0d09bb08e4eb86c00de95d6edaef31cc6fe9479955961311ee18ac205f"></a><!-- doxytag: member="L" ref="abf4830d0d09bb08e4eb86c00de95d6edaef31cc6fe9479955961311ee18ac205f" args="" -->L</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="abf4830d0d09bb08e4eb86c00de95d6eda3f2a77ecd272aa6d6b5902faa5e5fc68"></a><!-- doxytag: member="B" ref="abf4830d0d09bb08e4eb86c00de95d6eda3f2a77ecd272aa6d6b5902faa5e5fc68" args="" -->B</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="abf4830d0d09bb08e4eb86c00de95d6eda51ca6c63d97347ee58cc7da59ab6994b"></a><!-- doxytag: member="M" ref="abf4830d0d09bb08e4eb86c00de95d6eda51ca6c63d97347ee58cc7da59ab6994b" args="" -->M</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+<div class="fragment"><pre class="fragment">{<a class="code" href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6edaf1ce01387d2348f8b858721a7db81670">S</a>,<a class="code" href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6edaef31cc6fe9479955961311ee18ac205f">L</a>,<a class="code" href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6eda3f2a77ecd272aa6d6b5902faa5e5fc68">B</a>,<a class="code" href="strutta__dati_8h.html#abf4830d0d09bb08e4eb86c00de95d6eda51ca6c63d97347ee58cc7da59ab6994b">M</a>};
+</pre></div>
+</div>
+</div>
+<hr/><h2>Documentazione delle variabili</h2>
+<a class="anchor" id="abea96c5c88c5ab5a40e63a4f800ad89c"></a><!-- doxytag: member="strutta_dati.h::DENARO" ref="abea96c5c88c5ab5a40e63a4f800ad89c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="strutta__dati_8h.html#abea96c5c88c5ab5a40e63a4f800ad89c">DENARO</a> = 10000</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>denaro di partenza del gioco </p>
+
+</div>
+</div>
+<a class="anchor" id="a989e38486ed69cc55a3b417054ae5b3c"></a><!-- doxytag: member="strutta_dati.h::DIM_MESSAGGIO" ref="a989e38486ed69cc55a3b417054ae5b3c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="strutta__dati_8h.html#a989e38486ed69cc55a3b417054ae5b3c">DIM_MESSAGGIO</a> = 100</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>massima dimensione di una stringa per i messaggi all'utente </p>
+
+</div>
+</div>
+<a class="anchor" id="a09233e19648809f424f7a4078fbbb05a"></a><!-- doxytag: member="strutta_dati.h::DIM_STR_FILE" ref="a09233e19648809f424f7a4078fbbb05a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="strutta__dati_8h.html#a09233e19648809f424f7a4078fbbb05a">DIM_STR_FILE</a> = 20</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>descrive la lunghezza massima della stringa contenente il nome del file dalla foto di ogni carta </p>
+
+</div>
+</div>
+<a class="anchor" id="a669918f54dab8982e88cc3c15a03d9d3"></a><!-- doxytag: member="strutta_dati.h::DIM_STRINGHE" ref="a669918f54dab8982e88cc3c15a03d9d3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="strutta__dati_8h.html#a669918f54dab8982e88cc3c15a03d9d3">DIM_STRINGHE</a> = 20</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>dimensione massima delle stringhe </p>
+
+</div>
+</div>
+<a class="anchor" id="a109d000c036a060c6dcc60762ef27eef"></a><!-- doxytag: member="strutta_dati.h::LIMITE_DO_PX" ref="a109d000c036a060c6dcc60762ef27eef" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="strutta__dati_8h.html#a109d000c036a060c6dcc60762ef27eef">LIMITE_DO_PX</a> = 450</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>limite inferiore per la pedina in pixel </p>
+
+</div>
+</div>
+<a class="anchor" id="a2e77c529a369c47c0eb367f797919cc0"></a><!-- doxytag: member="strutta_dati.h::LIMITE_DX_PX" ref="a2e77c529a369c47c0eb367f797919cc0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="strutta__dati_8h.html#a2e77c529a369c47c0eb367f797919cc0">LIMITE_DX_PX</a> = 425</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>limite destro per la pedina in pixel </p>
+
+</div>
+</div>
+<a class="anchor" id="a18f3b76839e1b24b872ec84ef9b783ed"></a><!-- doxytag: member="strutta_dati.h::LIMITE_SX_PX" ref="a18f3b76839e1b24b872ec84ef9b783ed" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="strutta__dati_8h.html#a18f3b76839e1b24b872ec84ef9b783ed">LIMITE_SX_PX</a> = 15</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>limite sinistro per la pedina in pixel </p>
+
+</div>
+</div>
+<a class="anchor" id="a4a84892ac2d2b7b12394b6ce11f098c2"></a><!-- doxytag: member="strutta_dati.h::LIMITE_UP_PX" ref="a4a84892ac2d2b7b12394b6ce11f098c2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="strutta__dati_8h.html#a4a84892ac2d2b7b12394b6ce11f098c2">LIMITE_UP_PX</a> = 25</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>limite superiore per la pedina in pixel </p>
+
+</div>
+</div>
+<a class="anchor" id="ad43f8c91bcd12ba9c244c810b7933c0a"></a><!-- doxytag: member="strutta_dati.h::MAX_BOARD" ref="ad43f8c91bcd12ba9c244c810b7933c0a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="strutta__dati_8h.html#ad43f8c91bcd12ba9c244c810b7933c0a">MAX_BOARD</a> = 40</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>massimo numero di carte presenti nel gioco </p>
+
+</div>
+</div>
+<a class="anchor" id="a64b4127eab65af02324d9deb906ac125"></a><!-- doxytag: member="strutta_dati.h::PIXEL_CARTA" ref="a64b4127eab65af02324d9deb906ac125" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="strutta__dati_8h.html#a64b4127eab65af02324d9deb906ac125">PIXEL_CARTA</a> = 41</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>grandezza un pixel di una carta sulla mappa utile per gestire i movimenti delle pedine </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tutto</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classi</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>File</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funzioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variabili</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Ridefinizioni di tipo (typedef)</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Tipi enumerati (enum)</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valori del tipo enumerato</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Definizioni</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generato Ven 7 Giu 2013 13:30:38 per Social media Monopoly da &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>
