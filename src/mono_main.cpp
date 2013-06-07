@@ -11,7 +11,7 @@
 * le carte giuste e vinci la partita.
 *
 * Il gioco è strutturato su 4 file: mono_main.cpp,imp_prob.cpp, fileIO.cpp e manip.cpp
-* Il programma sfrutta un file di setup per permette anticipatamente in fase di carcamento di sapere
+* Il programma sfrutta un file di setup per permette anticipatamente in fase di caricamento di sapere
 * quali i dettaglio di ogni carta utilizzabile nel gioco.
 *
 * Per lanciare il programma da terminare digitare il comando:
@@ -48,7 +48,7 @@ static turni testa=NULL;
 /** puntatore che mi tiene traccia di quale turno è in corso e di
 * e di chi sta giocando in un determinato momento
 */
-turno_t *punta_turni;
+static turno_t *punta_turni;
 /*Variabile privata al file che mi tiene traccia del numero di giocatori presenti
 * nella partita
 */
@@ -60,7 +60,7 @@ static int num_gc;
 * contenuto nella struttura turno_t. Array caricato da un file di testo 
 * di setup chiamato "setup_board_carte.txt"
 */
-carta_t tavola[MAX_BOARD];
+static carta_t tavola[MAX_BOARD];
 /** puntatore di appoggio utile quando effettuo operazioni quale ad esempio quella scambio
 * in cui ho bisogno di avere un riferimento su più giocatori 
 */
