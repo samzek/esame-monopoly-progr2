@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['handler_5f2_5fgiocatori',['handler_2_giocatori',['../mono__main_8cpp.html#ad7b1cc6a2e69adc75a55809282cbe19d',1,'mono_main.cpp']]],
+  ['handler_5f3_5fgiocatori',['handler_3_giocatori',['../mono__main_8cpp.html#abdc315fd26f6c44dd5425989015b936b',1,'mono_main.cpp']]],
+  ['handler_5f4_5fgiocatori',['handler_4_giocatori',['../mono__main_8cpp.html#ac4c9a75fdbed28903250565c566feb7c',1,'mono_main.cpp']]],
+  ['handler_5fcambia_5fipo',['handler_cambia_ipo',['../mono__main_8cpp.html#a90b53f2b08ce7da0764ae3a27ff4e579',1,'mono_main.cpp']]],
+  ['handler_5fcarica_5fpartita',['handler_carica_partita',['../mono__main_8cpp.html#a33b90e8785aa764df2cf850c721ce84f',1,'mono_main.cpp']]],
+  ['handler_5fcompra_5fazioni',['handler_compra_azioni',['../mono__main_8cpp.html#ad90b3c3c7119a0c9edd6ee48d512e2ca',1,'mono_main.cpp']]],
+  ['handler_5fcompra_5fcarta',['handler_compra_carta',['../mono__main_8cpp.html#a3c9df4ae98fe5803e248e2ad11a90d96',1,'mono_main.cpp']]],
+  ['handler_5fdichiara_5ffallimento',['handler_dichiara_fallimento',['../mono__main_8cpp.html#a636d53fb578a95c7e1500c2272b3d7c0',1,'mono_main.cpp']]],
+  ['handler_5feffettua_5fscambio',['handler_effettua_scambio',['../mono__main_8cpp.html#a5b2a11f504e563774a051443cee91177',1,'mono_main.cpp']]],
+  ['handler_5ffine_5fturno',['handler_fine_turno',['../mono__main_8cpp.html#ab0fb1abffab08bda22d1da4db1f6d6be',1,'mono_main.cpp']]],
+  ['handler_5finizia_5fscambio',['handler_inizia_scambio',['../mono__main_8cpp.html#ae47f29621bde1d5e31ce7be8dc948d68',1,'mono_main.cpp']]],
+  ['handler_5flancia_5fdado',['handler_lancia_dado',['../mono__main_8cpp.html#af8a61bf93761bebe15ed19b51c33062e',1,'mono_main.cpp']]],
+  ['handler_5fnew_5fmatch',['handler_new_match',['../mono__main_8cpp.html#af84d92602708d3414c177466ca706792',1,'mono_main.cpp']]],
+  ['handler_5fok_5fpersonaggi',['handler_ok_personaggi',['../mono__main_8cpp.html#adb960475c9fe80d1220e21a605252b00',1,'mono_main.cpp']]],
+  ['handler_5fsalva_5fpartita',['handler_salva_partita',['../mono__main_8cpp.html#a9970e16780dbe1474d2d48d67641b3ad',1,'mono_main.cpp']]],
+  ['handler_5fscambia_5fcarte',['handler_scambia_carte',['../mono__main_8cpp.html#aae50511be5e791b825d3c92a3b316124',1,'mono_main.cpp']]],
+  ['handler_5fvendi_5fcarta',['handler_vendi_carta',['../mono__main_8cpp.html#a9d7117f8872f56288ed064d160d15fce',1,'mono_main.cpp']]],
+  ['handler_5fvisualizza_5fcarte',['handler_visualizza_carte',['../mono__main_8cpp.html#aba0d8b30cd78f8b526e400cdb2619d88',1,'mono_main.cpp']]],
+  ['handler_5fvisualizza_5fregole',['handler_visualizza_regole',['../mono__main_8cpp.html#ac59b30dcb0091dee449d27aa558f9695',1,'mono_main.cpp']]],
+  ['handler_5fvisuallizza_5fdialog_5fconferma',['handler_visuallizza_dialog_conferma',['../mono__main_8cpp.html#a48bba7eaf8788f6daf8af2e15627e0b2',1,'mono_main.cpp']]],
+  ['hide_5fand_5fremove',['hide_and_remove',['../mono__main_8cpp.html#ad3c3843f2b32ca3b4de9f28e7e0fc683',1,'mono_main.cpp']]],
+  ['hide_5fmain_5fwindow',['hide_main_window',['../mono__main_8cpp.html#a25880d9d561c0b54301ba567d445c40f',1,'mono_main.cpp']]]
+];
