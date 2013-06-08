@@ -8,7 +8,7 @@ Monopoly: $(OBJ)
 
 -include dependencies
 
-.PHONY: depend clean cleanall debug
+.PHONY: depend clean cleanall
 
 depend:
 	g++ -MM *.cpp > dependencies
@@ -16,5 +16,3 @@ clean:
 	rm *.o
 cleanall:
 	rm Monopoly *.o *~
-debug:
-	g++ -D DEBUG_MODE -o Monopoly $(OBJ) $(LDFLAGS) 
