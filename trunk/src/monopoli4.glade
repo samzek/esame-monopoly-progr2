@@ -185,6 +185,7 @@
     <property name="window_position">center</property>
     <property name="default_width">700</property>
     <property name="default_height">580</property>
+    <property name="icon">Omino_Monopoli.jpeg</property>
     <child>
       <object class="GtkBox" id="box1">
         <property name="visible">True</property>
@@ -268,6 +269,16 @@
                   <object class="GtkMenu" id="menu3">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkMenuItem" id="Documentazione">
+                        <property name="use_action_appearance">False</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">Documentazione</property>
+                        <property name="use_underline">True</property>
+                        <signal name="activate" handler="attiva_documentazione" swapped="no"/>
+                      </object>
+                    </child>
                     <child>
                       <object class="GtkMenuItem" id="regole">
                         <property name="use_action_appearance">False</property>
@@ -998,6 +1009,7 @@
     <property name="window_position">center</property>
     <property name="default_width">700</property>
     <property name="default_height">700</property>
+    <signal name="delete-event" handler="gtk_widget_hide" swapped="no"/>
     <child>
       <object class="GtkBox" id="box33">
         <property name="visible">True</property>
@@ -1148,15 +1160,15 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <child>
-                  <object class="GtkComboBoxText" id="combo_gc_2">
+                  <object class="GtkComboBoxText" id="combo_gc_1">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_entry">True</property>
                     <property name="entry_text_column">0</property>
                     <property name="id_column">1</property>
-                    <signal name="changed" handler="handler_cambia_ipo" object="valore_carta_gc_2" swapped="no"/>
+                    <signal name="changed" handler="handler_cambia_ipo" object="valore_carta_gc_1" swapped="no"/>
                     <child internal-child="entry">
-                      <object class="GtkEntry" id="entry_gc1">
+                      <object class="GtkEntry" id="entry_gc2">
                         <property name="can_focus">False</property>
                       </object>
                     </child>
@@ -1168,15 +1180,15 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkComboBoxText" id="combo_gc_1">
+                  <object class="GtkComboBoxText" id="combo_gc_2">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_entry">True</property>
                     <property name="entry_text_column">0</property>
                     <property name="id_column">1</property>
-                    <signal name="changed" handler="handler_cambia_ipo" object="valore_carta_gc_1" swapped="no"/>
+                    <signal name="changed" handler="handler_cambia_ipo" object="valore_carta_gc_2" swapped="no"/>
                     <child internal-child="entry">
-                      <object class="GtkEntry" id="entry_gc2">
+                      <object class="GtkEntry" id="entry_gc1">
                         <property name="can_focus">False</property>
                       </object>
                     </child>

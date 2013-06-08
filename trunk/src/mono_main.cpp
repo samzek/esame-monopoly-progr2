@@ -307,6 +307,8 @@ extern "C" void handler_ok_personaggi(GtkButton *button,gpointer user_data)
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));
 	
 	aggiorna_label_credito(builder,punta_turni->giocatore.valore_residuo);
+	
+	gtk_widget_set_sensitive(GTK_WIDGET(gtk_builder_get_object(builder,"dichiara_fallimento")),true);
 }
 
 /** segnale che rende utilizzabile il quarto personaggio all'utente
@@ -350,8 +352,6 @@ extern "C" void handler_new_match(GtkMenuItem *menuitem, gpointer user_data)
 	
 	//azzera le proprieta accumulate nella precendente partita
 	azzera_proprieta(tavola);
-	
-	gtk_widget_set_sensitive(GTK_WIDGET(gtk_builder_get_object(builder,"dichiara_fallimento")),true);
 	
 	D2(cout<<"inizia nuova partita completato con successo"<<endl);
 }
@@ -585,6 +585,8 @@ extern "C" void handler_visuallizza_dialog_conferma(GtkButton *button,gpointer d
 */
 extern "C" void handler_dichiara_fallimento(GtkButton *button, gpointer data)
 {
+	assert(testa!=NULL);
+	
 	GtkWidget *widget=scegli_widget(builder,punta_turni);
 	
 	gtk_widget_set_visible(widget,false);
@@ -968,10 +970,16 @@ extern "C" void handler_carica_partita(GtkMenuItem *menuitem,gpointer data)
 	}
 	D2(cout<<"Il caricamento della partita ha avuto successo"<<endl);
 }
+//visualizza la finestra con l'insieme delle regole
 extern "C" void handler_visualizza_regole(GtkMenuItem *menuitem,gpointer data)
 {
 	GtkWidget *window=GTK_WIDGET(gtk_builder_get_object(builder,"regole "));
 	gtk_widget_show_all(window);
+}
+//link alla documentazione
+extern "C" void attiva_documentazione(GtkMenuItem *menuitem,gpointer data)
+{
+	system("firefox file:///home/samuele/esame-monopoly-progr2/Doc/html/index.html &");
 }
 /** Main del programma, carica subito dal file di setup i valori delle carte 
 * nell'array tavola utilizzando ::carica_board funzione fornita dall'interfaccia di fileIO.h
