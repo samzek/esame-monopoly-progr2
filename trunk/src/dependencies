@@ -1,4 +1,6 @@
+classifica.o: classifica.cpp strutta_dati.h manip.h classifica.h
 fileIO.o: fileIO.cpp strutta_dati.h fileIO.h manip.h
 imp_prob.o: imp_prob.cpp strutta_dati.h manip.h imp_prob.h
 manip.o: manip.cpp strutta_dati.h manip.h fileIO.h
-mono_main.o: mono_main.cpp strutta_dati.h manip.h fileIO.h imp_prob.h
+mono_main.o: mono_main.cpp strutta_dati.h manip.h fileIO.h imp_prob.h \
+ classifica.h
