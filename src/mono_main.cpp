@@ -10,7 +10,7 @@
 * Metti alla prova le tue doti di imprenditore e informatico, compra, vendi, scambia
 * le carte giuste e vinci la partita.
 *
-* Il gioco è strutturato su 4 file: mono_main.cpp,imp_prob.cpp, fileIO.cpp e manip.cpp
+* Il gioco è strutturato su 4 file: mono_main.cpp,imp_prob.cpp, fileIO.cpp, manip.cpp, classifica.cpp
 * Il programma sfrutta un file di setup per permette anticipatamente in fase di caricamento di sapere
 * quali i dettaglio di ogni carta utilizzabile nel gioco.
 *
@@ -33,6 +33,7 @@
 #include "manip.h"
 #include "fileIO.h"
 #include "imp_prob.h"
+#include "classifica.h"
 
 using namespace std;
 
@@ -44,7 +45,7 @@ unsigned int MASK = 3 ;
 /** Creazione dell'oggetto builder che permette di interaggire con la GUI*/
 GtkBuilder *builder;
 /** inizializzazione della testa della lista che gestisce i turni*/
-static turni testa=NULL;
+turni testa=NULL;
 /** puntatore che mi tiene traccia di quale turno è in corso e di
 * e di chi sta giocando in un determinato momento
 */
@@ -60,7 +61,7 @@ static int num_gc;
 * contenuto nella struttura turno_t. Array caricato da un file di testo 
 * di setup chiamato "setup_board_carte.txt"
 */
-static carta_t tavola[MAX_BOARD];
+carta_t tavola[MAX_BOARD];
 /** puntatore di appoggio utile quando effettuo operazioni quale ad esempio quella scambio
 * in cui ho bisogno di avere un riferimento su più giocatori 
 */
@@ -79,6 +80,7 @@ static void inizializza_pulsanti(GtkBuilder *builder,bool sensitive)
 	gtk_widget_set_sensitive(GTK_WIDGET(gtk_builder_get_object(builder,"scambia")),sensitive);
 	gtk_widget_set_sensitive(GTK_WIDGET(gtk_builder_get_object(builder,"compra")),sensitive);
 	gtk_widget_set_sensitive(GTK_WIDGET(gtk_builder_get_object(builder,"compra_az")),sensitive);
+	gtk_widget_set_sensitive(GTK_WIDGET(gtk_builder_get_object(builder,"classifica")),sensitive);
 
 }
 /** Funzione privata che permette di aggiornare l'oggetto label
@@ -981,6 +983,26 @@ extern "C" void attiva_documentazione(GtkMenuItem *menuitem,gpointer data)
 {
 	system("firefox file:///home/samuele/esame-monopoly-progr2/Doc/html/index.html &");
 }
+/** visualizza la finestra che mostra la classifica attuale in base al 
+* credito residuo
+*/
+extern "C" void handler_apri_classifica(GtkButton *button,gpointer data)
+{
+	GtkWidget *classifica=GTK_WIDGET(gtk_builder_get_object(builder,"window1"));
+	gtk_widget_show_all(classifica);
+}
+/** Questo segnale richiama la funzione ::crea_disegno la quale mi disegna un istogramma
+* in base ai crediti residui dei giocatori e fornisce un elenco delle proprietà
+*/
+extern "C" gboolean handler_disegna(GtkWidget *widget, cairo_t *cr, gpointer data)
+{
+	if (num_gc == 0)
+	return TRUE ;
+
+    	crea_disegno(widget,cr,num_gc);
+
+     return FALSE;
+}
 /** Main del programma, carica subito dal file di setup i valori delle carte 
 * nell'array tavola utilizzando ::carica_board funzione fornita dall'interfaccia di fileIO.h
 * inizializza la sensibilità dei pulsanti tramite la funzione ::inizializza_pulsanti
@@ -992,6 +1014,7 @@ extern "C" void attiva_documentazione(GtkMenuItem *menuitem,gpointer data)
 * ::handler_scambia_carte
 * ::handler_visualizza_carte
 * ::handler_dichiara_fallimento
+* ::handler_disegna
 */
 int main(int argc,char *argv[])
 {

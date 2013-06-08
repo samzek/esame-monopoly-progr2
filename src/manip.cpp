@@ -189,7 +189,6 @@ int gestione_spostamenti(turno_t *punta_turni,int &coord_x,int &coord_y,int &dad
 		coord_x-=(PIXEL_CARTA*dado);
 		if(coord_x<LIMITE_SX_PX)
 		{
-			primo_if:
 			//utilizzo la funzione abs in quanto uno spostamento verso 
 			//SX mi portebbe ad avere valori della x < 0
 			int app=abs(coord_x);

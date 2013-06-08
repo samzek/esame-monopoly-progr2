@@ -13,7 +13,7 @@ Yahoo 600 20 180 RO yahoo.jpeg
 PC 1000 0  260 SC pc.jpeg
 Bing 630 25 200 RO bing.jpeg
 Google 660 35 230 RO google.jpeg
-BlackBarry 1000 0 260 SC blackberry.jpeg
+BlackBerry 1000 0 260 SC blackberry.jpeg
 Tumblr 700 40 250 AR tumblr.jpeg
 imprevisti 0 0 0 NC imprevisti.jpeg
 WordPress 730 43 260 AR wordpress.jpeg
