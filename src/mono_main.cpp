@@ -965,7 +965,6 @@ extern "C" void handler_carica_partita(GtkMenuItem *menuitem,gpointer data)
 		
 		while(app1!=NULL)
 		{
-			cout<<"crea widget"<<endl;
 			GtkWidget *widget=scegli_widget(builder,app1);
 			ripristina_posizione_pedine(builder,widget,app1->coord_x,app1->coord_y);
 			app1=app1->pross;
@@ -977,6 +976,8 @@ extern "C" void handler_carica_partita(GtkMenuItem *menuitem,gpointer data)
 		aggiorna_label_credito(builder,punta_turni->giocatore.valore_residuo);
 		
 		inizializza_pulsanti(builder,true);
+		
+		gtk_widget_set_sensitive(GTK_WIDGET(gtk_builder_get_object(builder,"dado")),false);
 		
 		gtk_widget_set_sensitive(GTK_WIDGET(gtk_builder_get_object(builder,"dichiara_fallimento")),true);
 	}
