@@ -15,8 +15,7 @@ void stampa(carta_t tavola[],int i)
 		cout<<tavola[j].nome_carta<<endl;
 }
 /** Funziona usata nella funziona ::carica_board e permette
-* di decide quale colore attribuire a una determinata 
-* carta
+* attribuire a una determinata carta un colore
 */
 void imposta_colore(carta_t tavola[],char colore[],int i)
 {
@@ -55,8 +54,7 @@ turno_t* ultimo_turno( turni testa )
     return prec;
 }
 /** Si occupa di creare la lista circolare dei turni.
-*
-*crea i turni in base al numero di giocatori inseriti
+* crea i turni in base al numero di giocatori inseriti
 * il numero di giocatori corrisponde al numero di elementi
 * della lista dei turni.
 */
@@ -123,7 +121,7 @@ void elimina_lista(turni &testa)
      }
 }
 /** Modifica il parametro nome della struttura ::giocatore_t andando a inserire
-* i valori che l'utente ha inserito da tastiera nelle entry
+* i valori che l'utente ha inserito da tastiera nelle entry di ::acquisisci_nomi
 */
 bool aggiungi_elemento(const char *stringa,turno_t * &p,personaggio_t persona,int &conta)
 {
@@ -159,7 +157,7 @@ giocatore_t *individua_carta(turno_t *punta_turni,const carta_t tavola[], int &p
 
 /** Gestisce il lancio del dato attraverso la generazione di 2 numeri pseudocasuali
 * gestisce lo spostamento in termini di pixel che una certa pedina deve compiere dopo
-* il lancio dei dati
+* il lancio dei dati utilizzata data ::handler_lancia_dado
 */
 int gestione_spostamenti(turno_t *punta_turni,int &coord_x,int &coord_y,int &dado_1,int &dado_2)
 {	
@@ -247,7 +245,7 @@ int gestione_spostamenti(turno_t *punta_turni,int &coord_x,int &coord_y,int &dad
 	return dado;
 }
 /** Funzione che gestisce il pagamento dell'affitto da parte di un certo utente
-* nel caso in cui esso dovesse transitare su una casella di proprietà di un altro giocatore
+* nel caso in cui esso dovesse transitare su una carta di proprietà di un altro giocatore
 */
 bool pagamento_affitto(turno_t *punta_turni,carta_t tavola[],bool &penalita,int &costo_affitto)
 {
@@ -284,8 +282,8 @@ bool pagamento_affitto(turno_t *punta_turni,carta_t tavola[],bool &penalita,int 
 	costo_affitto=affitto;
 	return true;
 }
-/** verifica che un certo giocatore in un determinato momento si ancora 
-* in graado di continuare la partita
+/** verifica che un certo giocatore in un determinato momento sia ancora 
+* in grado di continuare la partita
 */
 bool verifica_fallimento(int valore_residuo,int conta_prop)
 {
@@ -341,7 +339,7 @@ void vendi_tutto(carta_t tavola[],turno_t *punta_turni)
 		if(tavola[i].prop!=NULL && strcmp(tavola[i].prop->nome,punta_turni->giocatore.nome)==0)
 					tavola[i].prop=NULL;
 }
-/** Funzione utilizzata per andare a verificare che un determinato giocatore abbia o meno
+/** Funzione utilizzata per andare a verificare che un determinato giocatore possegga o meno
 * tutte le carte dello stesso colore, ritorna un valore booleano.
 */
 bool controlla_colore_carte(turno_t *punta_turni,carta_t tavola[],int indice)
@@ -366,8 +364,8 @@ bool controlla_colore_carte(turno_t *punta_turni,carta_t tavola[],int indice)
 	return false;
 }
 /** setaccia all'interno della lista circolare tutti i nomi dei giocatori
-* andando a vedere se uno di quello inseriti in partenza è uguale a quello 
-* inserito nella entry dello scambia carte
+* andando a vedere se uno di quelli inseriti in partenza è uguale a quello 
+* inserito nella entry del segnale ::handler_scambia_carte
 */
 bool cerca_nome(turni testa,const char *nome,turno_t *&app,int num_gc)
 {
@@ -429,8 +427,8 @@ void effettua_scambio(carta_t tavola[],const char *nome1,const char *nome2,int &
 	tavola[indice_carta_1].num_azioni=0;
 	tavola[indice_carta_2].num_azioni=0;
 }
-/** funzione utilizzata da::carica_partita per andare a scegliere a quale personaggio
-* o movimento corrispondesse un certo valore riportato nel file di salvataggio
+/** funzione utilizzata da ::carica_partita per andare a scegliere a quale personaggio
+* o movimento corrisponde un certo valore riportato nel file di salvataggio
 */
 void seleziona_personaggio_movimento(turno_t *app,int val,bool scelta_pers_active)
 {

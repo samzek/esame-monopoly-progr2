@@ -5,7 +5,7 @@
 
 
 /**carico l'array con il quale è implementata la struttura dati
-* carta_t con valori che si trovano in file di setup il quale 
+* carta_t con valori che si trovano in un file di setup il quale 
 * contiene tutti i parametri che ogni carta deve possedere
 * prima di iniziare il gioco
 */

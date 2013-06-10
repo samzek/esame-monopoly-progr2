@@ -1,5 +1,5 @@
 /**@mainpage 
-*Questo programma permette a un massimo di 4 utentidi giocare a 
+*Questo programma permette a un massimo di 4 utenti di giocare a 
 * una versione particolare e non riconosciuta di un gioco da tavolo famosissimo
 * di nome Monopoly. 
 
@@ -10,7 +10,7 @@
 * Metti alla prova le tue doti di imprenditore e informatico, compra, vendi, scambia
 * le carte giuste e vinci la partita.
 *
-* Il gioco è strutturato su 4 file: mono_main.cpp,imp_prob.cpp, fileIO.cpp, manip.cpp, classifica.cpp
+* Il gioco è strutturato su 5 file: mono_main.cpp,imp_prob.cpp, fileIO.cpp, manip.cpp, classifica.cpp
 * Il programma sfrutta un file di setup per permette anticipatamente in fase di caricamento di sapere
 * quali i dettaglio di ogni carta utilizzabile nel gioco.
 *
@@ -42,27 +42,28 @@ using namespace std;
 unsigned int MASK = 3 ;
 #endif
 
-/** Creazione dell'oggetto builder che permette di interaggire con la GUI*/
+/** Creazione dell'oggetto builder che permette di interagire con la GUI*/
 GtkBuilder *builder;
 /** inizializzazione della testa della lista che gestisce i turni*/
 turni testa=NULL;
-/** puntatore che mi tiene traccia di quale turno è in corso e di
+/** puntatore che tiene traccia di quale turno è in corso e di
 * e di chi sta giocando in un determinato momento
 */
 static turno_t *punta_turni;
-/*Variabile privata al file che mi tiene traccia del numero di giocatori presenti
+/*Variabile privata al file che conta il numero di giocatori presenti
 * nella partita
 */
 static int num_gc;
-/** Implementazione tramite array delle struttura dati carta_t
+/** Implementazione tramite array delle struttura dati ::carta_t
 * mi rappresenta l'insieme delle carte o più precisamente l'insieme delle aziende 
 * acquistabili e non all'interno del gioco. Struttura su cui un 
 * un giocatore si può muovere tramite il campo posizione_nelle_carte
-* contenuto nella struttura turno_t. Array caricato da un file di testo 
+* contenuto nella struttura ::turno_t. Array caricato da un file di testo 
 * di setup chiamato "setup_board_carte.txt"
 */
 carta_t tavola[MAX_BOARD];
-/** puntatore di appoggio utile quando effettuo operazioni quale ad esempio quella scambio
+/** puntatore di appoggio utile quando effettuo operazioni che prevedono la partecipazione
+* di più personaggi contemporaneamente, quale ad esempio quella ::handler_scambia_carte
 * in cui ho bisogno di avere un riferimento su più giocatori 
 */
 static turno_t *app;
@@ -97,9 +98,9 @@ static void aggiorna_label_credito(GtkBuilder *builder,int val_res)
 	oss.clear();
 
 }
-/** controlla lo stato dei radio button all'interno della sinistra
+/** controlla lo stato dei radio button all'interno della finestra
 * di selezione dei personaggi, contestualemente mi crea la lista circolare
-* dei turni in base al numero di giocatori prescelto
+* dei turni in base al numero di giocatori scelto
 */
 static void controlla_radio(GtkBuilder *builder)
 {
@@ -125,7 +126,7 @@ static void controlla_radio(GtkBuilder *builder)
 }
 
 /**Funzione di appoggio privata che permette di comunicare messaggi 
-* genereci all'utente tramite un opportuna dialog box
+* generici all'utente tramite un opportuna dialog box
 */
 static void mostra_messaggi(const char *str_princ)
 {
@@ -139,9 +140,11 @@ static void mostra_messaggi(const char *str_princ)
     gtk_widget_show_all(error_alert) ;
 }
 
-/**acquisisce i nomi dalle entry apposite e aggiunge gli elementi
+/**Funzione privata che acquisisce i nomi dalle entry apposite e aggiunge gli elementi
 * alla lista dei turni e in caso di fallimento dovuto ad un errato inserimento
-* ritorna false e visualizza un mex di errore svuotando anche la lista
+* ritorna false e visualizza un messaggio di errore svuotando anche la lista.
+* La funzione ritorna un valore booleano, il valore corrisponde o meno al verificarsi
+* di un errore in questa fase quindi: true errore presente, false errore assente
 */
 static bool acquisisci_nomi(GtkBuilder *builder,bool errore)
 {
@@ -163,6 +166,9 @@ static bool acquisisci_nomi(GtkBuilder *builder,bool errore)
 	 	return true;
 	 
 	 }
+	 //se il sono stati inseriti un numero corretto 
+	 // di valori nella lista allora la funzione ritorna
+	 //false e comunica che non ci sono stati errori
 	 else if(conta==num_gc)
 	 	return false;
 	 const char *bil=gtk_entry_get_text(GTK_ENTRY(gtk_builder_get_object(builder,"bill")));
@@ -191,7 +197,7 @@ extern "C" void hide_main_window(GtkButton *button, gpointer data)
 	gtk_widget_hide(gtk_widget_get_toplevel(GTK_WIDGET(button)));
 }
 
-/**funziona ausiliaria privata che setta l'immagine del giocatore
+/**funzione ausiliaria privata che setta l'immagine del giocatore
 *a cui spetta giocare in determinato turno
 */
 static void setta_immagine(GtkBuilder *builder,turno_t *punta_turni,const char *str)
@@ -220,7 +226,7 @@ static void setta_immagine(GtkBuilder *builder,turno_t *punta_turni,const char *
 	oss.clear();
 }
 
-/** Funzione ausiliaria private che permette di settare tutte le label 
+/** Funzione ausiliaria privata che permette di settare tutte le label 
 * con i paramentri relativi ad una determinata carta su cui si trova
 * il giocatore
 */
@@ -271,8 +277,9 @@ static void ripristina_posizione_pedine(GtkBuilder *builder,GtkWidget *widget,in
 	gtk_layout_move(GTK_LAYOUT(gtk_builder_get_object(builder,"layout1")),widget,coord_x,coord_y);
 	gtk_widget_set_visible(widget,true);
 }
-/** Segnale di conferma dei personaggi scelti in base al numero di giocatori
+/** Segnale di conferma dei personaggi scelti in base al numero di giocatori.
 * visualizza le miniature delle pedine e le sistema in posizione corretta
+* tramite ::setta_label_immagine e ::ripristina_posizione_pedine
 * di partenza
 */
 extern "C" void handler_ok_personaggi(GtkButton *button,gpointer user_data)
@@ -375,9 +382,10 @@ static GtkWidget * scegli_widget(GtkBuilder *builder,turno_t *punta_turni)
 	}
 
 }
-/** funzione priva che controlla il fallimento di un determinato 
+/** funzione privata che controlla il fallimento di un determinato 
 * giocatore comunicando che sia il caso di reale fallimento
-* sia il caso di obbligo di vendita di alcune proprietà
+* sia il caso di obbligo di vendita di alcune proprietà, utilizzando
+* la funzione ::verifica_fallimento
 */
 static void controlla_fallimento(GtkBuilder *builder)
 {
@@ -394,8 +402,8 @@ static void controlla_fallimento(GtkBuilder *builder)
 		gtk_widget_set_sensitive(GTK_WIDGET(gtk_builder_get_object(builder,"carte")),true);
 		}
 }
-/** Funzione privata che mi consente di settare l'immagine del dato 
-* in base al valore che la selezione di numeri casuali a generato
+/** Funzione privata che mi consente di settare l'immagine del dado 
+* in base al valore che la selezione di numeri casuali ha generato
 */
 static void aggiorna_immagine_dadi(GtkImage *dado_image,int dado)
 {	
@@ -423,10 +431,13 @@ static void aggiorna_immagine_dadi(GtkImage *dado_image,int dado)
 
 }
 /** Segnale che gestisce il lancio dei dadi tutti gli spostamenti al lancio 
-* connessi tramite la funzione del file manip.cpp il settaggio dei tutte le label
-* e immagini dovuto allo spostamento il controllo sulla prigione e sugli imprevisti
+* connessi tramite ::gestione_spostamenti una funzione del file manip.cpp il settaggio 
+* dei tutte le labele immagini dovuto allo spostamento il controllo sulla 
+* prigione e sugli imprevisti
 * e probabilità, il pagamento di un determinato affito al proprietario della carta
-* su cui si è andati a posizionare
+* su cui si è andati a posizionare tramite la funzione ::pagamento_affitto che ritorna
+* un valore booleano nel caso sia riuscito o meno e controlla anche che il pagamento
+* dell'affito non porti il determinato giocatore al fallimento tramite ::controlla_fallimento
 */
 extern "C" void handler_lancia_dado(GtkButton *button,gpointer data)
 {
@@ -520,9 +531,9 @@ extern "C" void handler_fine_turno(GtkButton *button,gpointer data)
 		controlla_fallimento(builder);
 	}
 }
-/** Segnale che permette di compra una determinata carta a costo che alcune condizioni
+/** Segnale che permette di comprare una determinata carta a costo che alcune condizioni
 * siano rispettate, contiene anche un controllo che stabilisce se si posseggono
-* tutte le carte dello stesso colore
+* tutte le carte dello stesso colore verificato tramite la funzione: ::controlla_colore_carte
 */
 extern "C" void handler_compra_carta(GtkButton *button,gpointer data)
 {
@@ -570,7 +581,7 @@ extern "C" void handler_compra_carta(GtkButton *button,gpointer data)
 	}
 	D2(cout<<"Acquisto completato con successo"<<endl);
 }
-/** Questo segnale mi permette di aprire una finestra di dialog per chiedere all'utente
+/** Questo segnale mi permette di aprire una finestra di dialogo per chiedere all'utente
 * se desidera realmente compiere una determinata azione 
 */
 extern "C" void handler_visuallizza_dialog_conferma(GtkButton *button,gpointer data)
@@ -580,10 +591,10 @@ extern "C" void handler_visuallizza_dialog_conferma(GtkButton *button,gpointer d
 	GtkLabel *label=GTK_LABEL(gtk_builder_get_object(builder,"mex_conferma"));
 	gtk_label_set_text(label,"Confermi di voler dichiarare fallimento?");
 }
-/** Segnale associato al pulsante dichiara fallimento che permette comunica la propria
+/** Segnale associato al pulsante dichiara fallimento che permette comunicare la propria
 * sconfitta o il proprio ritiro, il giocatore che preme tale pulsante viene estratto
-* dalla lista e si contralla che sia rimasto un solo giocatore in tal caso 
-* quello risulterà essere il vincitore della partita
+* dalla lista e si controlla che se è rimasto un solo giocatore, in tal caso 
+* tale utente risulterà essere il vincitore della partita
 */
 extern "C" void handler_dichiara_fallimento(GtkButton *button, gpointer data)
 {
@@ -655,7 +666,7 @@ extern "C" void handler_compra_azioni(GtkButton *button,gpointer data)
 	int num;
 	is>>carattere;
 	
-	//inserire qui condizione in caso di entry vuota
+	//controllo entry non vuota
 	if(strcmp(carattere,"")==0)
 	{
 		mostra_messaggi("Occorre inserire un valore nella entry");
@@ -663,7 +674,7 @@ extern "C" void handler_compra_azioni(GtkButton *button,gpointer data)
 	}
 	else
 	{
-		//cout<<"Carattere 1: "<<carattere[0]<<" carattere 2: "<<carattere[1]<<endl;
+		//controllo inserimento valore significativo per quella entry
 		for(int i=0;carattere[i]!='\0' && i<DIM_STRINGHE;i++)
 			if(carattere[i]<'0' || carattere[i]>'9')
 			{	
@@ -680,7 +691,7 @@ extern "C" void handler_compra_azioni(GtkButton *button,gpointer data)
 			return;
 		}
 	tavola[punta_turni->posizione_nelle_carte].num_azioni=num;
-	//cout<<tavola[punta_turni->posizione_nelle_carte].num_azioni<<endl;
+	
 	punta_turni->giocatore.valore_residuo-=num*tavola[punta_turni->posizione_nelle_carte].val_azioni;
 	
 	D1(cout<<"nuovo valore residuo: "<<punta_turni->giocatore.valore_residuo<<endl);
@@ -696,14 +707,14 @@ extern "C" void handler_compra_azioni(GtkButton *button,gpointer data)
 	oss<<"Hai comprato "<<num<<" azioni spesa totale: "<<num*tavola[punta_turni->posizione_nelle_carte].val_azioni;
 	gtk_label_set_text(GTK_LABEL(gtk_builder_get_object(builder,"mex_affitto")),oss.str().c_str());
 	
-	//cout<<punta_turni->giocatore.valore_residuo<<endl;
+	
 	
 	aggiorna_label_credito(builder,punta_turni->giocatore.valore_residuo);
 	
 	D2(cout<<"Compra azioni completata con successo"<<endl);
 }
 /** Funzione di supporto che carica la combo box con il nome
-* di tutte le proprita possedute da un certo giocatore
+* di tutte le proprità possedute da un certo giocatore
 */
 static void carica_combo(GtkComboBoxText *combo,turno_t *punta_turni)
 {
@@ -749,7 +760,7 @@ static void rimuovi(GtkComboBoxText *combo,const char *nome_entry,const char *no
 	
 }
 /** Sengale di uscita particolare associato al pulsante esci delle
-* dialog visualizza carte che svuota la combo e contralla che un certo 
+* dialog che presentano ComboBox, svuota la combo e contralla che un certo 
 * giocatore non debba dichiarare fallimento
 */
 extern "C" void hide_and_remove(GtkButton *button,gpointer data)
@@ -805,14 +816,14 @@ extern "C" void handler_vendi_carta(GtkButton *button,gpointer data)
 		svuota_azioni_stesso_colore(tavola,indice_carta);
 	}
 }
-/** Segnale che apre la dialog selezionare il giocatore con cui iniziare lo scambio */
+/** Segnale che apre la dialog per selezionare il giocatore con cui iniziare lo scambio */
 extern "C" void handler_scambia_carte(GtkButton *button,gpointer data)
 {
 	GtkWidget *ins_dialog=GTK_WIDGET(gtk_builder_get_object(builder,"scelta_gc_scambio"));
 	gtk_widget_show_all(ins_dialog);
 }
-/** Segnale che si occupa di gestire controllare che la stringa inserita nella entry
-* sia realmentte il nome di un giocatore e fa partire la finestra di scambio in caso
+/** Segnale che si occupa di gestire e controllare che la stringa inserita nella entry
+* sia realmente il nome di un giocatore e fa partire la finestra di scambio in caso
 * che il controllo ritorni valore positivo, utilizza la funzione fornita da manip.h
 * ::cerca_nome
 */
@@ -854,8 +865,8 @@ extern "C" void handler_inizia_scambio(GtkButton *button,gpointer data)
 /** Segnale che si occupa del vero scambio delle carte attivato
 * alla pressione del pulsante scambia e riuscito se e solo 
 * se entrambi i giocatori hanno selezionato qualcosa dalle relative ComboBox
-* contenenti l'elenco delle proprietàk, utilizza la funzione fornita dall'interfaccia
-* di ::manip.h ::effettua_scambio. Utilizza inoltre le funzioni ::carica_combo
+* contenenti l'elenco delle proprietà, utilizza la funzione fornita dall'interfaccia
+* di manip.h ::effettua_scambio. Utilizza inoltre le funzioni ::carica_combo
 * e ::rimuovi_combo per gestire la combo svutandola e ricaricandola
 */
 extern "C" void handler_effettua_scambio(GtkButton *button,gpointer data)
@@ -972,13 +983,13 @@ extern "C" void handler_carica_partita(GtkMenuItem *menuitem,gpointer data)
 	}
 	D2(cout<<"Il caricamento della partita ha avuto successo"<<endl);
 }
-//visualizza la finestra con l'insieme delle regole
+/** visualizza la finestra con l'insieme delle regole */
 extern "C" void handler_visualizza_regole(GtkMenuItem *menuitem,gpointer data)
 {
 	GtkWidget *window=GTK_WIDGET(gtk_builder_get_object(builder,"regole "));
 	gtk_widget_show_all(window);
 }
-//link alla documentazione
+/** link alla documentazione */
 extern "C" void attiva_documentazione(GtkMenuItem *menuitem,gpointer data)
 {
 	system("firefox file:///home/samuele/esame-monopoly-progr2/Doc/html/index.html &");
@@ -1007,14 +1018,14 @@ extern "C" gboolean handler_disegna(GtkWidget *widget, cairo_t *cr, gpointer dat
 * nell'array tavola utilizzando ::carica_board funzione fornita dall'interfaccia di fileIO.h
 * inizializza la sensibilità dei pulsanti tramite la funzione ::inizializza_pulsanti
 * aggiorna la label del credito residuo utilizzando la funzione ::aggiorna_label_credito
-* Le funzionalita principali del programma sono gestite dai sengali :
-* ::handler_lancia_dado
-* ::handler_compra_carta
-* ::handler_compra_azioni
-* ::handler_scambia_carte
-* ::handler_visualizza_carte
-* ::handler_dichiara_fallimento
-* ::handler_disegna
+* Le funzionalita principali del programma sono gestite dai sengali:.
+* ::handler_lancia_dado.
+* ::handler_compra_carta.
+* ::handler_compra_azioni.
+* ::handler_scambia_carte.
+* ::handler_visualizza_carte.
+* ::handler_dichiara_fallimento.
+* ::handler_disegna.
 */
 int main(int argc,char *argv[])
 {
