@@ -88,6 +88,7 @@
     <property name="can_focus">False</property>
     <property name="border_width">5</property>
     <property name="type_hint">dialog</property>
+    <signal name="delete-event" handler="gtk_widget_hide" swapped="no"/>
     <child internal-child="vbox">
       <object class="GtkBox" id="dialog-vbox8">
         <property name="can_focus">False</property>
@@ -1176,15 +1177,15 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <child>
-                  <object class="GtkComboBoxText" id="combo_gc_1">
+                  <object class="GtkComboBoxText" id="combo_gc_2">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_entry">True</property>
                     <property name="entry_text_column">0</property>
                     <property name="id_column">1</property>
-                    <signal name="changed" handler="handler_cambia_ipo" object="valore_carta_gc_1" swapped="no"/>
+                    <signal name="changed" handler="handler_cambia_ipo" object="valore_carta_gc_2" swapped="no"/>
                     <child internal-child="entry">
-                      <object class="GtkEntry" id="entry_gc2">
+                      <object class="GtkEntry" id="entry_gc1">
                         <property name="can_focus">False</property>
                       </object>
                     </child>
@@ -1196,15 +1197,15 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkComboBoxText" id="combo_gc_2">
+                  <object class="GtkComboBoxText" id="combo_gc_1">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_entry">True</property>
                     <property name="entry_text_column">0</property>
                     <property name="id_column">1</property>
-                    <signal name="changed" handler="handler_cambia_ipo" object="valore_carta_gc_2" swapped="no"/>
+                    <signal name="changed" handler="handler_cambia_ipo" object="valore_carta_gc_1" swapped="no"/>
                     <child internal-child="entry">
-                      <object class="GtkEntry" id="entry_gc1">
+                      <object class="GtkEntry" id="entry_gc2">
                         <property name="can_focus">False</property>
                       </object>
                     </child>
@@ -1970,6 +1971,7 @@ con cui scambiare le carte</property>
     <property name="window_position">center</property>
     <property name="default_width">600</property>
     <property name="default_height">600</property>
+    <signal name="delete-event" handler="gtk_widget_hide" swapped="no"/>
     <child>
       <object class="GtkBox" id="box38">
         <property name="visible">True</property>
