@@ -6,7 +6,7 @@ using namespace std;
 
 extern GtkBuilder *builder;
 
-/** Funzione di gestione degli imprevisti e probabilità decide cosa scegliere in base alla carta
+/** Funzione per la gestione degli imprevisti e probabilità decide cosa scegliere in base alla carta
 * su cui il giocatore si trova
 */
 void gestione_imprevisti_probabilita(turno_t *&punta_turni,carta_t tavola[],const char *nome_carta)
