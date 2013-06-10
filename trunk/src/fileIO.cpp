@@ -98,7 +98,6 @@ bool carica_partita(turni &testa,carta_t tavola[],int &num_gc,turno_t *&punta_tu
 			elimina_lista(testa);
 			f>>num_gc;
 			crea_turni(testa,num_gc);
-			stampa_turni(testa);
 			f>>nome;
 			turno_t *app=testa;
 			turno_t *ultimo=ultimo_turno(testa);
@@ -132,7 +131,7 @@ bool carica_partita(turni &testa,carta_t tavola[],int &num_gc,turno_t *&punta_tu
 						break;
 					if(i>=40)
 						return false;
-					cout<<i<<endl;
+					//cout<<i<<endl;
 					tavola[i].prop=&(app->giocatore);
 					D1(cout<<"Proprietario:"<<tavola[i].prop->nome<<endl);
 					f>>tavola[i].num_azioni;
