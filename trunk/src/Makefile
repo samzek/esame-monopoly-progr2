@@ -8,7 +8,7 @@ Monopoly: $(OBJ)
 
 -include dependencies
 
-.PHONY: depend clean cleanall
+.PHONY: depend clean cleanall debug
 
 depend:
 	g++ -MM *.cpp > dependencies
