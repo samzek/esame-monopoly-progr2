@@ -28,7 +28,6 @@
 #include <cstring>
 #include <cstdlib>
 #include <sstream>
-#include <fstream>
 #include "strutta_dati.h"
 #include "manip.h"
 #include "fileIO.h"
