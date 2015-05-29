@@ -1,0 +1,1 @@
+Social media monopoly, versione modificata del monopoly classico con variazioni nelle carte al posto delle vie più famose del mondo troviamo i socialnetwork più famosi del mondo!
